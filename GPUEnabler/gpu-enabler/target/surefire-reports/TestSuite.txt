@@ -1,0 +1,39 @@
+Discovery starting.
+Discovery completed in 363 milliseconds.
+Run starting. Expected test count is: 30
+CUDADSFunctionSuite:
+- Ensure CUDA Function is serializable (1 second, 496 milliseconds)
+- Run count() (6 seconds, 615 milliseconds)
+- Run identity CUDA kernel on a single primitive array column (449 milliseconds)
+- Run identity CUDA kernel on a single primitive array in a structure (818 milliseconds)
+- Run add CUDA kernel with free variables on a single primitive array column (648 milliseconds)
+- Run vectorLength CUDA kernel on 2 col -> 1 col (937 milliseconds)
+- Run plusMinus CUDA kernel on 2 col -> 2 col (921 milliseconds)
+- Run applyLinearFunction CUDA kernel on 1 col + 2 const arg -> 1 col (592 milliseconds)
+- Run blockXOR CUDA kernel on 1 col + 1 const arg -> 1 col on custom dimensions (539 milliseconds)
+- Run sum CUDA kernel on 1 col -> 1 col in 2 stages (586 milliseconds)
+- Run map on datasets - single partition (604 milliseconds)
+- Run reduce on datasets - single partition (568 milliseconds)
+- Run map + reduce on datasets - single partition (603 milliseconds)
+- Run map on datasets with 100,000 elements - multiple partition (805 milliseconds)
+- Run map + reduce on datasets - multiple partitions (637 milliseconds)
+- Run map + reduce on datasets with 100,000,000 elements - multiple partitions (8 seconds, 904 milliseconds)
+- Run map + map + reduce on datasets - multiple partitions (575 milliseconds)
+- Run map + map + map + collect on datasets (672 milliseconds)
+- Run map + map + map + reduce on datasets - multiple partitions (694 milliseconds)
+- Run map on dataset with a single primitive array column (546 milliseconds)
+- Run map with free variables on dataset with a single primitive array column (569 milliseconds)
+- Run reduce on dataset with a single primitive array column (575 milliseconds)
+- Run map & reduce on a single primitive array in a structure (753 milliseconds)
+- Run logistic regression (1 second, 784 milliseconds)
+- Run map with Self on Dataset  (585 milliseconds)
+- CUDA GPU Cache Testcase (1 second, 121 milliseconds)
+- CUDA GPU loadGpu Testcase (1 second, 55 milliseconds)
+- Run map + map + map + reduce on datasets - Cached multiple partitions (711 milliseconds)
+- Run map + map + map + reduce on dataset - Cached multiple partitions - GPU Only (746 milliseconds)
+- Run matix multiplication (738 milliseconds)
+Run completed in 37 seconds, 313 milliseconds.
+Total number of tests run: 30
+Suites: completed 2, aborted 0
+Tests: succeeded 30, failed 0, canceled 0, ignored 0, pending 0
+All tests passed.

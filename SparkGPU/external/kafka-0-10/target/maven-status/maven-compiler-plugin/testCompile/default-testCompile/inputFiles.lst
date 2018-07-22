@@ -1,0 +1,4 @@
+/home/dcslab/SparkGPU/SparkGPU/external/kafka-0-10/src/test/java/org/apache/spark/streaming/kafka010/JavaDirectKafkaStreamSuite.java
+/home/dcslab/SparkGPU/SparkGPU/external/kafka-0-10/src/test/java/org/apache/spark/streaming/kafka010/JavaLocationStrategySuite.java
+/home/dcslab/SparkGPU/SparkGPU/external/kafka-0-10/src/test/java/org/apache/spark/streaming/kafka010/JavaConsumerStrategySuite.java
+/home/dcslab/SparkGPU/SparkGPU/external/kafka-0-10/src/test/java/org/apache/spark/streaming/kafka010/JavaKafkaRDDSuite.java

@@ -1,0 +1,8 @@
+/home/dcslab/SparkGPU/SparkGPU/streaming/src/test/java/org/apache/spark/streaming/JavaDurationSuite.java
+/home/dcslab/SparkGPU/SparkGPU/streaming/src/test/java/org/apache/spark/streaming/JavaMapWithStateSuite.java
+/home/dcslab/SparkGPU/SparkGPU/streaming/src/test/java/org/apache/spark/streaming/JavaReceiverAPISuite.java
+/home/dcslab/SparkGPU/SparkGPU/streaming/src/test/java/org/apache/spark/streaming/LocalJavaStreamingContext.java
+/home/dcslab/SparkGPU/SparkGPU/streaming/src/test/java/org/apache/spark/streaming/JavaTimeSuite.java
+/home/dcslab/SparkGPU/SparkGPU/streaming/src/test/java/org/apache/spark/streaming/JavaAPISuite.java
+/home/dcslab/SparkGPU/SparkGPU/streaming/src/test/java/org/apache/spark/streaming/JavaStreamingListenerAPISuite.java
+/home/dcslab/SparkGPU/SparkGPU/streaming/src/test/java/org/apache/spark/streaming/JavaWriteAheadLogSuite.java

@@ -1,0 +1,4 @@
+/home/dcslab/SparkGPU/SparkGPU/sql/catalyst/src/test/java/org/apache/spark/sql/streaming/JavaOutputModeSuite.java
+/home/dcslab/SparkGPU/SparkGPU/sql/catalyst/src/test/java/org/apache/spark/sql/catalyst/expressions/HiveHasherSuite.java
+/home/dcslab/SparkGPU/SparkGPU/sql/catalyst/src/test/java/org/apache/spark/sql/catalyst/expressions/RowBasedKeyValueBatchSuite.java
+/home/dcslab/SparkGPU/SparkGPU/sql/catalyst/src/test/java/org/apache/spark/sql/catalyst/expressions/XXH64Suite.java

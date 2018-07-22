@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.ibm.gpuenabler.TestJavaCUDASuite
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.105 sec - in com.ibm.gpuenabler.TestJavaCUDASuite

@@ -1,0 +1,10 @@
+/home/dcslab/SparkGPU/SparkGPU/common/network-shuffle/src/test/java/org/apache/spark/network/shuffle/ExternalShuffleIntegrationSuite.java
+/home/dcslab/SparkGPU/SparkGPU/common/network-shuffle/src/test/java/org/apache/spark/network/shuffle/BlockTransferMessagesSuite.java
+/home/dcslab/SparkGPU/SparkGPU/common/network-shuffle/src/test/java/org/apache/spark/network/sasl/SaslIntegrationSuite.java
+/home/dcslab/SparkGPU/SparkGPU/common/network-shuffle/src/test/java/org/apache/spark/network/shuffle/TestShuffleDataContext.java
+/home/dcslab/SparkGPU/SparkGPU/common/network-shuffle/src/test/java/org/apache/spark/network/shuffle/ExternalShuffleSecuritySuite.java
+/home/dcslab/SparkGPU/SparkGPU/common/network-shuffle/src/test/java/org/apache/spark/network/shuffle/ExternalShuffleBlockResolverSuite.java
+/home/dcslab/SparkGPU/SparkGPU/common/network-shuffle/src/test/java/org/apache/spark/network/shuffle/RetryingBlockFetcherSuite.java
+/home/dcslab/SparkGPU/SparkGPU/common/network-shuffle/src/test/java/org/apache/spark/network/shuffle/ExternalShuffleCleanupSuite.java
+/home/dcslab/SparkGPU/SparkGPU/common/network-shuffle/src/test/java/org/apache/spark/network/shuffle/OneForOneBlockFetcherSuite.java
+/home/dcslab/SparkGPU/SparkGPU/common/network-shuffle/src/test/java/org/apache/spark/network/shuffle/ExternalShuffleBlockHandlerSuite.java
