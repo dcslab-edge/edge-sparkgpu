@@ -8,7 +8,7 @@ type mvn >/dev/null 2>&1 || {
   exit -1
 }
 
-export MAVEN_OPTS="-Xmx2048m -XX:MaxPermSize=1024m"
+export MAVEN_OPTS="-Xmx512m -XX:MaxPermSize=256m"
 
 CUDA=0
 CUDAVER=0

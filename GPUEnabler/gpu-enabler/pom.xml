@@ -16,7 +16,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <CodeCacheSize>512m</CodeCacheSize>
-    <libJ.version>linux-ppc_64</libJ.version>
+    <libJ.version>linux-aarch64</libJ.version>
     <project.custom.encoding>UTF-8</project.custom.encoding>
     <project.custom.java.version>1.6</project.custom.java.version>
     <maven.compiler.source>${project.custom.java.version}</maven.compiler.source>
@@ -69,6 +69,8 @@
                 </os>
             </activation>
             <properties>
+                <jcuda.os>linux</jcuda.os>
+                <jcuda.arch>aarch64</jcuda.arch>
                 <jcuda.lib.ext>so</jcuda.lib.ext>
                 <jcuda.lib.suffix>linux-aarch64</jcuda.lib.suffix>            
             </properties>
@@ -139,7 +141,7 @@
     <dependency>
       <groupId>org.jcuda</groupId>
       <artifactId>jcuda</artifactId>
-      <version>0.8.0</version>
+      <version>0.9.0d</version>
     </dependency>
     <dependency>
       <groupId>org.scala-lang</groupId>
@@ -154,7 +156,7 @@
     <dependency>
         <groupId>net.alchim31.maven</groupId>
         <artifactId>scala-maven-plugin</artifactId>
-        <version>3.2.2</version>
+        <version>3.4.1</version>
         <scope>test</scope>
     </dependency>
     <dependency>
@@ -219,7 +221,7 @@
           <plugin>
           <groupId>net.alchim31.maven</groupId>
           <artifactId>scala-maven-plugin</artifactId>
-          <version>3.2.2</version>
+          <version>3.4.1</version>
           <executions>
             <execution>
               <id>eclipse-add-source</id>
@@ -277,7 +279,7 @@
       <plugin>
         <groupId>net.alchim31.maven</groupId>
         <artifactId>scala-maven-plugin</artifactId>
-        <version>3.2.2</version>
+        <version>3.4.1</version>
         <executions>
           <execution>
             <goals>
@@ -315,7 +317,7 @@
       <plugin>
         <groupId>net.alchim31.maven</groupId>
         <artifactId>scala-maven-plugin</artifactId>
-        <version>3.2.2</version>
+        <version>3.4.1</version>
         <configuration>
           <scalaVersion>${scala.version}</scalaVersion>
         </configuration>

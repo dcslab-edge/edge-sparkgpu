@@ -32,7 +32,7 @@
   <packaging>jar</packaging>
   <properties>
       <sbt.project.name>examples</sbt.project.name>
-      <libJ.version>linux-ppc_64</libJ.version>
+      <libJ.version>linux-aarch64</libJ.version>
   </properties>
   <name>GPU Enabler Examples</name>
 
@@ -139,7 +139,7 @@
       <plugin>
         <groupId>net.alchim31.maven</groupId>
         <artifactId>scala-maven-plugin</artifactId>
-        <version>3.2.2</version>
+        <version>3.4.1</version>
         <executions>
           <execution>
             <goals>
@@ -157,7 +157,7 @@
         <plugin>
           <groupId>net.alchim31.maven</groupId>
           <artifactId>scala-maven-plugin</artifactId>
-          <version>3.2.2</version>
+          <version>3.4.1</version>
           <executions>
             <execution>
               <id>eclipse-add-source</id>
@@ -237,7 +237,7 @@
       <plugin>
         <groupId>net.alchim31.maven</groupId>
         <artifactId>scala-maven-plugin</artifactId>
-        <version>3.2.2</version>
+        <version>3.4.1</version>
         <configuration>
           <scalaVersion>${scala.version}</scalaVersion>
         </configuration>
