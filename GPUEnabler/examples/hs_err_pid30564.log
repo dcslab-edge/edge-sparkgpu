@@ -1,0 +1,962 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGFPE (0x8) at pc=0x0000007fb6b43130, pid=30564, tid=0x0000007fb6d4b000
+#
+# JRE version: OpenJDK Runtime Environment (8.0_171-b11) (build 1.8.0_171-8u171-b11-0ubuntu0.16.04.1-b11)
+# Java VM: OpenJDK 64-Bit Server VM (25.171-b11 mixed mode linux-aarch64 compressed oops)
+# Problematic frame:
+# C  [libpthread.so.0+0x8130]  pthread_join+0xb8
+#
+# Failed to write core dump. Core dumps have been disabled. To enable core dumping, try "ulimit -c unlimited" before starting Java again
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread is native thread
+
+siginfo: si_signo: 8 (SIGFPE), si_code: 0 (SI_USER), sent from pid: 30621 (uid: 1001)
+
+Registers:
+R0=0x0000007fb5d992d0
+R1=0x0000000000000000
+R2=0x0000000000007768
+R3=0x0000000000000000
+R4=0x0000007fb5d992d0
+R5=0x0000000000000000
+R6=0x0000007fb6d4b6f0
+R7=0x0000000000000000
+R8=0x0000000000000062
+R9=0x0000000000000000
+R10=0x0101010101010101
+R11=0x0000000000000001
+R12=0x0000007fb5d99200
+R13=0xffffffffffffffff
+R14=0x0000000000000000
+R15=0x0000007fb6d51000
+R16=0x0000007fb6b43078
+R17=0x0000007fb6d241a8
+R18=0x0000000000000200
+R19=0x0000007fb5d99200
+R20=0x0000007fb6d23000
+R21=0x0000007fb6d4b000
+R22=0x0000007fb5d99620
+R23=0x0000007ffa5eab00
+R24=0x0000007ffa5eaa90
+R25=0x0000000000412108
+R26=0x0000000000000002
+R27=0x0000000000412100
+R28=0x0000007ffa5f45a5
+R29=0x0000007ffa5eaa40
+R30=0x0000007fb6b430dc
+
+Top of Stack: (sp=0x0000007ffa5eaa40)
+0x0000007ffa5eaa40:   0000007ffa5eaab0 0000007fb6d0ed2c
+0x0000007ffa5eaa50:   0000007ffa5eab18 0000007fb6d23000
+0x0000007ffa5eaa60:   0000007fb6d09d40 0000007ffa5eabb8
+0x0000007ffa5eaa70:   0000000000200000 0000000000000001
+0x0000007ffa5eaa80:   4010040100100001 0000000000000000
+0x0000007ffa5eaa90:   0000007fb6b43048 0000007fb5d99620
+0x0000007ffa5eaaa0:   0000007fb6d241a8 0000000000000000
+0x0000007ffa5eaab0:   0000007ffa5eab60 0000007fb6d0b7e0
+0x0000007ffa5eaac0:   0000007fb6d23000 0000007ffa5eace0
+0x0000007ffa5eaad0:   0000000000000000 0000007ffa5eabb8
+0x0000007ffa5eaae0:   0000007ffa5f45a5 0000007fb6d387b4
+0x0000007ffa5eaaf0:   0000000000414a50 0000007fb5d99200
+0x0000007ffa5eab00:   0000000000000000 0000007fb6d09d40
+0x0000007ffa5eab10:   0000007ffa5eabb8 0000000000000000
+0x0000007ffa5eab20:   0000000000000000 0000000000001000
+0x0000007ffa5eab30:   0000000000000000 0000000000200000
+0x0000007ffa5eab40:   0000000000000000 0000000000000000
+0x0000007ffa5eab50:   0000000000000000 4bf7c1bab4ce6100
+0x0000007ffa5eab60:   0000007ffa5eac20 0000007fb6d0c280
+0x0000007ffa5eab70:   0000000000000002 0000000000000000
+0x0000007ffa5eab80:   0000000000412100 0000007fb6d23000
+0x0000007ffa5eab90:   0000007fb6d12958 0000000000000058
+0x0000007ffa5eaba0:   0000007fb6d242a8 0000000000000001
+0x0000007ffa5eabb0:   0000000000000000 0000000000000002
+0x0000007ffa5eabc0:   0000000000412108 0000000000000001
+0x0000007ffa5eabd0:   0000007ffa5f45a5 0000007fb65d8170
+0x0000007ffa5eabe0:   0000007fb65d8108 0000007fb65d8460
+0x0000007ffa5eabf0:   0000000000000000 0000000000000000
+0x0000007ffa5eac00:   0000000000000000 0000000000000000
+0x0000007ffa5eac10:   0000000000000000 4bf7c1bab4ce6100
+0x0000007ffa5eac20:   0000007ffa5eed60 0000000000400628
+0x0000007ffa5eac30:   0000000000400788 0000000000000000 
+
+Instructions: (pc=0x0000007fb6b43130)
+0x0000007fb6b43110:   62 d2 40 b9 42 01 00 34 64 42 03 91 e0 03 04 aa
+0x0000007fb6b43120:   01 00 80 d2 42 7c 40 93 03 00 80 d2 48 0c 80 d2
+0x0000007fb6b43130:   01 00 00 d4 62 d2 40 b9 22 ff ff 35 e0 03 05 2a
+0x0000007fb6b43140:   96 20 00 94 e0 03 18 aa 01 00 80 52 69 1f 00 94 
+
+Register to memory mapping:
+
+R0=0x0000007fb5d992d0
+R1=0x0000000000000000
+R2=0x0000000000007768
+R3=0x0000000000000000
+R4=0x0000007fb5d992d0
+R5=0x0000000000000000
+R6=0x0000007fb6d4b6f0
+R7=0x0000000000000000
+R8=0x0000000000000062
+R9=0x0000000000000000
+R10=0x0101010101010101
+R11=0x0000000000000001
+R12=0x0000007fb5d99200
+R13=0xffffffffffffffff
+R14=0x0000000000000000
+R15=0x0000007fb6d51000
+R16=0x0000007fb6b43078
+R17=0x0000007fb6d241a8
+R18=0x0000000000000200
+R19=0x0000007fb5d99200
+R20=0x0000007fb6d23000
+R21=0x0000007fb6d4b000
+R22=0x0000007fb5d99620
+R23=0x0000007ffa5eab00
+R24=0x0000007ffa5eaa90
+R25=0x0000000000412108
+R26=0x0000000000000002
+R27=0x0000000000412100
+R28=0x0000007ffa5f45a5
+R29=0x0000007ffa5eaa40
+R30=0x0000007fb6b430dc
+
+
+Stack: [0x0000007ffa3f5000,0x0000007ffa5f5000],  sp=0x0000007ffa5eaa40,  free space=2006k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  [libpthread.so.0+0x8130]  pthread_join+0xb8
+C  [libjli.so+0x7d2c]
+C  [libjli.so+0x47e0]
+C  [libjli.so+0x5280]  JLI_Launch+0x920
+C  [java+0x628]
+C  [libc.so.6+0x1f8a0]  __libc_start_main+0xe0
+
+
+---------------  P R O C E S S  ---------------
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap:
+ PSYoungGen      total 375296K, used 203844K [0x00000000d5580000, 0x00000000f9000000, 0x0000000100000000)
+  eden space 358912K, 56% used [0x00000000d5580000,0x00000000e1c91278,0x00000000eb400000)
+  from space 16384K, 0% used [0x00000000f8000000,0x00000000f8000000,0x00000000f9000000)
+  to   space 43520K, 0% used [0x00000000f3b00000,0x00000000f3b00000,0x00000000f6580000)
+ ParOldGen       total 718336K, used 20038K [0x0000000080000000, 0x00000000abd80000, 0x00000000d5580000)
+  object space 718336K, 2% used [0x0000000080000000,0x0000000081391898,0x00000000abd80000)
+ Metaspace       used 45594K, capacity 45762K, committed 46080K, reserved 1089536K
+  class space    used 6524K, capacity 6593K, committed 6656K, reserved 1048576K
+
+Card table byte_map: [0x0000007fb4eb2000,0x0000007fb52b3000] byte_map_base: 0x0000007fb4ab2000
+
+Marking Bits: (ParMarkBitMap*) 0x0000007fb6b1e368
+ Begin Bits: [0x0000007f7c000000, 0x0000007f7e000000)
+ End Bits:   [0x0000007f7e000000, 0x0000007f80000000)
+
+Polling page: 0x0000007fb6d4a000
+
+CodeCache: size=524288Kb used=12168Kb max_used=12168Kb free=512119Kb
+ bounds [0x0000007f90000000, 0x0000007f90bf0000, 0x0000007fb0000000]
+ total_blobs=4089 nmethods=3584 adapters=416
+ compilation: enabled
+
+Compilation events (10 events):
+Event: 9.553 Thread 0x0000007fb00c6800 3588       3       org.spark_project.guava.util.concurrent.AtomicLongMap::addAndGet (107 bytes)
+Event: 9.555 Thread 0x0000007fb00c6800 nmethod 3588 0x0000007f90bec910 code [0x0000007f90becbc0, 0x0000007f90bed8b0]
+Event: 9.567 Thread 0x0000007fb00c6800 3589       3       org.apache.spark.sql.catalyst.trees.TreeNode$$anonfun$5$$anonfun$apply$11::apply (256 bytes)
+Event: 9.572 Thread 0x0000007fb00c6800 nmethod 3589 0x0000007f90be96d0 code [0x0000007f90be9b00, 0x0000007f90bebd80]
+Event: 9.572 Thread 0x0000007fb00c6800 3591       3       scala.collection.Iterator$class::foreach (26 bytes)
+Event: 9.572 Thread 0x0000007fb00c6800 nmethod 3591 0x0000007f90be46d0 code [0x0000007f90be4880, 0x0000007f90be4cf0]
+Event: 9.572 Thread 0x0000007fb00c6800 3590       3       scala.collection.AbstractIterator::foreach (6 bytes)
+Event: 9.573 Thread 0x0000007fb00c6800 nmethod 3590 0x0000007f90be3e50 code [0x0000007f90be4000, 0x0000007f90be44f0]
+Event: 9.576 Thread 0x0000007fb00c6800 3592       3       org.apache.spark.sql.catalyst.plans.logical.SerializeFromObject::productElement (51 bytes)
+Event: 9.577 Thread 0x0000007fb00c6800 nmethod 3592 0x0000007f90be8ed0 code [0x0000007f90be90c0, 0x0000007f90be94b0]
+
+GC Heap History (8 events):
+Event: 3.114 GC heap before
+{Heap before GC invocations=1 (full 0):
+ PSYoungGen      total 305664K, used 152110K [0x00000000d5580000, 0x00000000eaa80000, 0x0000000100000000)
+  eden space 262144K, 58% used [0x00000000d5580000,0x00000000dea0ba60,0x00000000e5580000)
+  from space 43520K, 0% used [0x00000000e8000000,0x00000000e8000000,0x00000000eaa80000)
+  to   space 43520K, 0% used [0x00000000e5580000,0x00000000e5580000,0x00000000e8000000)
+ ParOldGen       total 699392K, used 0K [0x0000000080000000, 0x00000000aab00000, 0x00000000d5580000)
+  object space 699392K, 0% used [0x0000000080000000,0x0000000080000000,0x00000000aab00000)
+ Metaspace       used 21080K, capacity 21188K, committed 21296K, reserved 1067008K
+  class space    used 2890K, capacity 2928K, committed 2944K, reserved 1048576K
+Event: 3.148 GC heap after
+Heap after GC invocations=1 (full 0):
+ PSYoungGen      total 305664K, used 15747K [0x00000000d5580000, 0x00000000faa80000, 0x0000000100000000)
+  eden space 262144K, 0% used [0x00000000d5580000,0x00000000d5580000,0x00000000e5580000)
+  from space 43520K, 36% used [0x00000000e5580000,0x00000000e64e0d58,0x00000000e8000000)
+  to   space 43520K, 0% used [0x00000000f8000000,0x00000000f8000000,0x00000000faa80000)
+ ParOldGen       total 699392K, used 80K [0x0000000080000000, 0x00000000aab00000, 0x00000000d5580000)
+  object space 699392K, 0% used [0x0000000080000000,0x0000000080014010,0x00000000aab00000)
+ Metaspace       used 21080K, capacity 21188K, committed 21296K, reserved 1067008K
+  class space    used 2890K, capacity 2928K, committed 2944K, reserved 1048576K
+}
+Event: 3.148 GC heap before
+{Heap before GC invocations=2 (full 1):
+ PSYoungGen      total 305664K, used 15747K [0x00000000d5580000, 0x00000000faa80000, 0x0000000100000000)
+  eden space 262144K, 0% used [0x00000000d5580000,0x00000000d5580000,0x00000000e5580000)
+  from space 43520K, 36% used [0x00000000e5580000,0x00000000e64e0d58,0x00000000e8000000)
+  to   space 43520K, 0% used [0x00000000f8000000,0x00000000f8000000,0x00000000faa80000)
+ ParOldGen       total 699392K, used 80K [0x0000000080000000, 0x00000000aab00000, 0x00000000d5580000)
+  object space 699392K, 0% used [0x0000000080000000,0x0000000080014010,0x00000000aab00000)
+ Metaspace       used 21080K, capacity 21188K, committed 21296K, reserved 1067008K
+  class space    used 2890K, capacity 2928K, committed 2944K, reserved 1048576K
+Event: 3.197 GC heap after
+Heap after GC invocations=2 (full 1):
+ PSYoungGen      total 305664K, used 0K [0x00000000d5580000, 0x00000000faa80000, 0x0000000100000000)
+  eden space 262144K, 0% used [0x00000000d5580000,0x00000000d5580000,0x00000000e5580000)
+  from space 43520K, 0% used [0x00000000e5580000,0x00000000e5580000,0x00000000e8000000)
+  to   space 43520K, 0% used [0x00000000f8000000,0x00000000f8000000,0x00000000faa80000)
+ ParOldGen       total 699392K, used 15076K [0x0000000080000000, 0x00000000aab00000, 0x00000000d5580000)
+  object space 699392K, 2% used [0x0000000080000000,0x0000000080eb9158,0x00000000aab00000)
+ Metaspace       used 21080K, capacity 21188K, committed 21296K, reserved 1067008K
+  class space    used 2890K, capacity 2928K, committed 2944K, reserved 1048576K
+}
+Event: 6.058 GC heap before
+{Heap before GC invocations=3 (full 1):
+ PSYoungGen      total 305664K, used 225290K [0x00000000d5580000, 0x00000000faa80000, 0x0000000100000000)
+  eden space 262144K, 85% used [0x00000000d5580000,0x00000000e3182a48,0x00000000e5580000)
+  from space 43520K, 0% used [0x00000000e5580000,0x00000000e5580000,0x00000000e8000000)
+  to   space 43520K, 0% used [0x00000000f8000000,0x00000000f8000000,0x00000000faa80000)
+ ParOldGen       total 699392K, used 15076K [0x0000000080000000, 0x00000000aab00000, 0x00000000d5580000)
+  object space 699392K, 2% used [0x0000000080000000,0x0000000080eb9158,0x00000000aab00000)
+ Metaspace       used 35217K, capacity 35350K, committed 35456K, reserved 1079296K
+  class space    used 4931K, capacity 4979K, committed 4992K, reserved 1048576K
+Event: 6.080 GC heap after
+Heap after GC invocations=3 (full 1):
+ PSYoungGen      total 375296K, used 16312K [0x00000000d5580000, 0x00000000f9000000, 0x0000000100000000)
+  eden space 358912K, 0% used [0x00000000d5580000,0x00000000d5580000,0x00000000eb400000)
+  from space 16384K, 99% used [0x00000000f8000000,0x00000000f8fee018,0x00000000f9000000)
+  to   space 43520K, 0% used [0x00000000f3b00000,0x00000000f3b00000,0x00000000f6580000)
+ ParOldGen       total 699392K, used 15084K [0x0000000080000000, 0x00000000aab00000, 0x00000000d5580000)
+  object space 699392K, 2% used [0x0000000080000000,0x0000000080ebb158,0x00000000aab00000)
+ Metaspace       used 35217K, capacity 35350K, committed 35456K, reserved 1079296K
+  class space    used 4931K, capacity 4979K, committed 4992K, reserved 1048576K
+}
+Event: 6.080 GC heap before
+{Heap before GC invocations=4 (full 2):
+ PSYoungGen      total 375296K, used 16312K [0x00000000d5580000, 0x00000000f9000000, 0x0000000100000000)
+  eden space 358912K, 0% used [0x00000000d5580000,0x00000000d5580000,0x00000000eb400000)
+  from space 16384K, 99% used [0x00000000f8000000,0x00000000f8fee018,0x00000000f9000000)
+  to   space 43520K, 0% used [0x00000000f3b00000,0x00000000f3b00000,0x00000000f6580000)
+ ParOldGen       total 699392K, used 15084K [0x0000000080000000, 0x00000000aab00000, 0x00000000d5580000)
+  object space 699392K, 2% used [0x0000000080000000,0x0000000080ebb158,0x00000000aab00000)
+ Metaspace       used 35217K, capacity 35350K, committed 35456K, reserved 1079296K
+  class space    used 4931K, capacity 4979K, committed 4992K, reserved 1048576K
+Event: 6.140 GC heap after
+Heap after GC invocations=4 (full 2):
+ PSYoungGen      total 375296K, used 0K [0x00000000d5580000, 0x00000000f9000000, 0x0000000100000000)
+  eden space 358912K, 0% used [0x00000000d5580000,0x00000000d5580000,0x00000000eb400000)
+  from space 16384K, 0% used [0x00000000f8000000,0x00000000f8000000,0x00000000f9000000)
+  to   space 43520K, 0% used [0x00000000f3b00000,0x00000000f3b00000,0x00000000f6580000)
+ ParOldGen       total 718336K, used 20038K [0x0000000080000000, 0x00000000abd80000, 0x00000000d5580000)
+  object space 718336K, 2% used [0x0000000080000000,0x0000000081391898,0x00000000abd80000)
+ Metaspace       used 35217K, capacity 35350K, committed 35456K, reserved 1079296K
+  class space    used 4931K, capacity 4979K, committed 4992K, reserved 1048576K
+}
+
+Deoptimization events (10 events):
+Event: 9.152 Thread 0x0000007fb0014800 Uncommon trap: reason=class_check action=maybe_recompile pc=0x0000007f90635eb4 method=java.net.URLClassLoader.defineClass(Ljava/lang/String;Lsun/misc/Resource;)Ljava/lang/Class; @ 13
+Event: 9.169 Thread 0x0000007fb0014800 Uncommon trap: reason=class_check action=maybe_recompile pc=0x0000007f90901668 method=scala.reflect.internal.Symbols$Symbol.newTermSymbol(Lscala/reflect/internal/Names$TermName;Lscala/reflect/internal/util/Position;J)Lscala/reflect/internal/Symbols$TermSy
+Event: 9.184 Thread 0x0000007fb0014800 Uncommon trap: reason=class_check action=maybe_recompile pc=0x0000007f90635eb4 method=java.net.URLClassLoader.defineClass(Ljava/lang/String;Lsun/misc/Resource;)Ljava/lang/Class; @ 13
+Event: 9.185 Thread 0x0000007fb0014800 Uncommon trap: reason=class_check action=maybe_recompile pc=0x0000007f90635eb4 method=java.net.URLClassLoader.defineClass(Ljava/lang/String;Lsun/misc/Resource;)Ljava/lang/Class; @ 13
+Event: 9.186 Thread 0x0000007fb0014800 Uncommon trap: reason=class_check action=maybe_recompile pc=0x0000007f90635eb4 method=java.net.URLClassLoader.defineClass(Ljava/lang/String;Lsun/misc/Resource;)Ljava/lang/Class; @ 13
+Event: 9.186 Thread 0x0000007fb0014800 Uncommon trap: reason=class_check action=maybe_recompile pc=0x0000007f9065a6ac method=java.net.URLClassLoader.defineClass(Ljava/lang/String;Lsun/misc/Resource;)Ljava/lang/Class; @ 13
+Event: 9.284 Thread 0x0000007fb0014800 Uncommon trap: reason=class_check action=maybe_recompile pc=0x0000007f908e2c14 method=scala.collection.IndexedSeqOptimized$class.slice(Lscala/collection/IndexedSeqOptimized;II)Ljava/lang/Object; @ 21
+Event: 9.423 Thread 0x0000007fb0014800 Uncommon trap: reason=bimorphic action=maybe_recompile pc=0x0000007f909157dc method=scala.collection.TraversableLike$class.flatMap(Lscala/collection/TraversableLike;Lscala/Function1;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object; @ 17
+Event: 9.425 Thread 0x0000007fb0014800 Uncommon trap: reason=bimorphic action=maybe_recompile pc=0x0000007f908565b4 method=scala.collection.generic.Growable$class.loop$1(Lscala/collection/generic/Growable;Lscala/collection/LinearSeq;)V @ 1
+Event: 9.433 Thread 0x0000007fb0014800 Uncommon trap: reason=class_check action=maybe_recompile pc=0x0000007f908e2c14 method=scala.collection.IndexedSeqOptimized$class.slice(Lscala/collection/IndexedSeqOptimized;II)Ljava/lang/Object; @ 21
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (10 events):
+Event: 9.202 Thread 0x0000007fb0014800 Exception <a 'java/lang/ClassNotFoundException': scala/reflect/ScalaSignature> (0x00000000dffe91c0) thrown at [/build/openjdk-8-R14K1p/openjdk-8-8u171-b11/src/hotspot/src/share/vm/classfile/systemDictionary.cpp, line 210]
+Event: 9.202 Thread 0x0000007fb0014800 Exception <a 'java/lang/ClassNotFoundException': scala/reflect/ScalaLongSignature> (0x00000000dffe9668) thrown at [/build/openjdk-8-R14K1p/openjdk-8-8u171-b11/src/hotspot/src/share/vm/classfile/systemDictionary.cpp, line 210]
+Event: 9.211 Thread 0x0000007fb0014800 Exception <a 'java/lang/ClassNotFoundException': scala/reflect/ScalaSignature> (0x00000000e0011da0) thrown at [/build/openjdk-8-R14K1p/openjdk-8-8u171-b11/src/hotspot/src/share/vm/classfile/systemDictionary.cpp, line 210]
+Event: 9.211 Thread 0x0000007fb0014800 Exception <a 'java/lang/ClassNotFoundException': scala/reflect/ScalaLongSignature> (0x00000000e0012248) thrown at [/build/openjdk-8-R14K1p/openjdk-8-8u171-b11/src/hotspot/src/share/vm/classfile/systemDictionary.cpp, line 210]
+Event: 9.220 Thread 0x0000007fb0014800 Exception <a 'java/lang/ClassNotFoundException': scala/reflect/ScalaSignature> (0x00000000e003b4a8) thrown at [/build/openjdk-8-R14K1p/openjdk-8-8u171-b11/src/hotspot/src/share/vm/classfile/systemDictionary.cpp, line 210]
+Event: 9.220 Thread 0x0000007fb0014800 Exception <a 'java/lang/ClassNotFoundException': scala/reflect/ScalaLongSignature> (0x00000000e003b950) thrown at [/build/openjdk-8-R14K1p/openjdk-8-8u171-b11/src/hotspot/src/share/vm/classfile/systemDictionary.cpp, line 210]
+Event: 9.229 Thread 0x0000007fb0014800 Exception <a 'java/lang/ClassNotFoundException': scala/reflect/ScalaSignature> (0x00000000e005e008) thrown at [/build/openjdk-8-R14K1p/openjdk-8-8u171-b11/src/hotspot/src/share/vm/classfile/systemDictionary.cpp, line 210]
+Event: 9.229 Thread 0x0000007fb0014800 Exception <a 'java/lang/ClassNotFoundException': scala/reflect/ScalaLongSignature> (0x00000000e005e4b0) thrown at [/build/openjdk-8-R14K1p/openjdk-8-8u171-b11/src/hotspot/src/share/vm/classfile/systemDictionary.cpp, line 210]
+Event: 9.238 Thread 0x0000007fb0014800 Exception <a 'java/lang/ClassNotFoundException': scala/reflect/ScalaSignature> (0x00000000e007ecd8) thrown at [/build/openjdk-8-R14K1p/openjdk-8-8u171-b11/src/hotspot/src/share/vm/classfile/systemDictionary.cpp, line 210]
+Event: 9.238 Thread 0x0000007fb0014800 Exception <a 'java/lang/ClassNotFoundException': scala/reflect/ScalaLongSignature> (0x00000000e007f180) thrown at [/build/openjdk-8-R14K1p/openjdk-8-8u171-b11/src/hotspot/src/share/vm/classfile/systemDictionary.cpp, line 210]
+
+Events (10 events):
+Event: 9.576 loading class org/apache/spark/sql/catalyst/optimizer/CollapseWindow$$anonfun$apply$10
+Event: 9.576 loading class org/apache/spark/sql/catalyst/optimizer/CollapseWindow$$anonfun$apply$10 done
+Event: 9.577 loading class org/apache/spark/sql/catalyst/optimizer/CombineFilters$$anonfun$apply$13
+Event: 9.577 loading class org/apache/spark/sql/catalyst/optimizer/CombineFilters$$anonfun$apply$13 done
+Event: 9.578 loading class org/apache/spark/sql/catalyst/optimizer/CombineLimits$$anonfun$apply$18
+Event: 9.578 loading class org/apache/spark/sql/catalyst/optimizer/CombineLimits$$anonfun$apply$18 done
+Event: 9.579 loading class org/apache/spark/sql/catalyst/optimizer/NullPropagation$$anonfun$apply$8
+Event: 9.579 loading class org/apache/spark/sql/catalyst/optimizer/NullPropagation$$anonfun$apply$8 done
+Event: 9.580 loading class org/apache/spark/sql/catalyst/optimizer/NullPropagation$$anonfun$apply$8$$anonfun$applyOrElse$7
+Event: 9.580 loading class org/apache/spark/sql/catalyst/optimizer/NullPropagation$$anonfun$apply$8$$anonfun$applyOrElse$7 done
+
+
+Dynamic libraries:
+00400000-00401000 r-xp 00000000 b3:01 1190133                            /usr/lib/jvm/java-8-openjdk-arm64/jre/bin/java
+00410000-00411000 r--p 00000000 b3:01 1190133                            /usr/lib/jvm/java-8-openjdk-arm64/jre/bin/java
+00411000-00412000 rw-p 00001000 b3:01 1190133                            /usr/lib/jvm/java-8-openjdk-arm64/jre/bin/java
+00412000-00448000 rw-p 00000000 00:00 0                                  [heap]
+80000000-abd80000 rw-p 00000000 00:00 0 
+abd80000-d5580000 ---p 00000000 00:00 0 
+d5580000-f9000000 rw-p 00000000 00:00 0 
+f9000000-100000000 ---p 00000000 00:00 0 
+100000000-100680000 rw-p 00000000 00:00 0 
+100680000-140000000 ---p 00000000 00:00 0 
+7f06c00000-7f06c80000 rw-p 00000000 00:00 0 
+7f06c80000-7f06e00000 ---p 00000000 00:00 0 
+7f06e00000-7f07000000 rw-p 00000000 00:00 0 
+7f07000000-7f07200000 rw-p 00000000 00:00 0 
+7f07200000-7f07400000 rw-p 00000000 00:00 0 
+7f07400000-7f07600000 rw-p 00000000 00:00 0 
+7f07600000-7f07800000 rw-p 00000000 00:00 0 
+7f07800000-7f07a00000 rw-p 00000000 00:00 0 
+7f07a00000-7f07c00000 rw-p 00000000 00:00 0 
+7f07c00000-7f07c03000 ---p 00000000 00:00 0 
+7f07c03000-7f07e00000 rw-p 00000000 00:00 0 
+7f07e00000-7f07e03000 ---p 00000000 00:00 0 
+7f07e03000-7f08000000 rw-p 00000000 00:00 0 
+7f08000000-7f08021000 rw-p 00000000 00:00 0 
+7f08021000-7f0c000000 ---p 00000000 00:00 0 
+7f0c000000-7f0c021000 rw-p 00000000 00:00 0 
+7f0c021000-7f10000000 ---p 00000000 00:00 0 
+7f10000000-7f10021000 rw-p 00000000 00:00 0 
+7f10021000-7f14000000 ---p 00000000 00:00 0 
+7f14000000-7f14021000 rw-p 00000000 00:00 0 
+7f14021000-7f18000000 ---p 00000000 00:00 0 
+7f18000000-7f18021000 rw-p 00000000 00:00 0 
+7f18021000-7f1c000000 ---p 00000000 00:00 0 
+7f1c000000-7f1c021000 rw-p 00000000 00:00 0 
+7f1c021000-7f20000000 ---p 00000000 00:00 0 
+7f20000000-7f20021000 rw-p 00000000 00:00 0 
+7f20021000-7f24000000 ---p 00000000 00:00 0 
+7f24000000-7f24021000 rw-p 00000000 00:00 0 
+7f24021000-7f28000000 ---p 00000000 00:00 0 
+7f28000000-7f28021000 rw-p 00000000 00:00 0 
+7f28021000-7f2c000000 ---p 00000000 00:00 0 
+7f2c000000-7f2c021000 rw-p 00000000 00:00 0 
+7f2c021000-7f30000000 ---p 00000000 00:00 0 
+7f30000000-7f30021000 rw-p 00000000 00:00 0 
+7f30021000-7f34000000 ---p 00000000 00:00 0 
+7f34000000-7f34021000 rw-p 00000000 00:00 0 
+7f34021000-7f38000000 ---p 00000000 00:00 0 
+7f38000000-7f38021000 rw-p 00000000 00:00 0 
+7f38021000-7f3c000000 ---p 00000000 00:00 0 
+7f3c000000-7f3c065000 rw-p 00000000 00:00 0 
+7f3c065000-7f40000000 ---p 00000000 00:00 0 
+7f40000000-7f40021000 rw-p 00000000 00:00 0 
+7f40021000-7f44000000 ---p 00000000 00:00 0 
+7f44000000-7f44021000 rw-p 00000000 00:00 0 
+7f44021000-7f48000000 ---p 00000000 00:00 0 
+7f48000000-7f48003000 ---p 00000000 00:00 0 
+7f48003000-7f48400000 rw-p 00000000 00:00 0 
+7f48400000-7f48403000 ---p 00000000 00:00 0 
+7f48403000-7f48600000 rw-p 00000000 00:00 0 
+7f48600000-7f48603000 ---p 00000000 00:00 0 
+7f48603000-7f48800000 rw-p 00000000 00:00 0 
+7f48800000-7f48803000 ---p 00000000 00:00 0 
+7f48803000-7f48c00000 rw-p 00000000 00:00 0 
+7f48c00000-7f48c03000 ---p 00000000 00:00 0 
+7f48c03000-7f48e00000 rw-p 00000000 00:00 0 
+7f48e00000-7f48e03000 ---p 00000000 00:00 0 
+7f48e03000-7f49000000 rw-p 00000000 00:00 0 
+7f49000000-7f49003000 ---p 00000000 00:00 0 
+7f49003000-7f49200000 rw-p 00000000 00:00 0 
+7f49200000-7f49203000 ---p 00000000 00:00 0 
+7f49203000-7f49400000 rw-p 00000000 00:00 0 
+7f49400000-7f49403000 ---p 00000000 00:00 0 
+7f49403000-7f49600000 rw-p 00000000 00:00 0 
+7f49600000-7f49603000 ---p 00000000 00:00 0 
+7f49603000-7f49800000 rw-p 00000000 00:00 0 
+7f49800000-7f49803000 ---p 00000000 00:00 0 
+7f49803000-7f49a00000 rw-p 00000000 00:00 0 
+7f49a00000-7f49a03000 ---p 00000000 00:00 0 
+7f49a03000-7f49c00000 rw-p 00000000 00:00 0 
+7f49c00000-7f49c03000 ---p 00000000 00:00 0 
+7f49c03000-7f49e00000 rw-p 00000000 00:00 0 
+7f49e00000-7f49e03000 ---p 00000000 00:00 0 
+7f49e03000-7f4a000000 rw-p 00000000 00:00 0 
+7f4a000000-7f4a003000 ---p 00000000 00:00 0 
+7f4a003000-7f4a400000 rw-p 00000000 00:00 0 
+7f4a400000-7f4a403000 ---p 00000000 00:00 0 
+7f4a403000-7f4a600000 rw-p 00000000 00:00 0 
+7f4a600000-7f4a603000 ---p 00000000 00:00 0 
+7f4a603000-7f4a800000 rw-p 00000000 00:00 0 
+7f4a800000-7f4a803000 ---p 00000000 00:00 0 
+7f4a803000-7f4aa00000 rw-p 00000000 00:00 0 
+7f4aa00000-7f4aa03000 ---p 00000000 00:00 0 
+7f4aa03000-7f4ac00000 rw-p 00000000 00:00 0 
+7f4ac00000-7f4ac03000 ---p 00000000 00:00 0 
+7f4ac03000-7f4ae00000 rw-p 00000000 00:00 0 
+7f4ae00000-7f4ae03000 ---p 00000000 00:00 0 
+7f4ae03000-7f4b000000 rw-p 00000000 00:00 0 
+7f4b000000-7f4b003000 ---p 00000000 00:00 0 
+7f4b003000-7f4b200000 rw-p 00000000 00:00 0 
+7f4b200000-7f4b203000 ---p 00000000 00:00 0 
+7f4b203000-7f4b400000 rw-p 00000000 00:00 0 
+7f4b400000-7f4b403000 ---p 00000000 00:00 0 
+7f4b403000-7f4b600000 rw-p 00000000 00:00 0 
+7f4b600000-7f4b603000 ---p 00000000 00:00 0 
+7f4b603000-7f4ba00000 rw-p 00000000 00:00 0 
+7f4ba00000-7f4bc00000 rw-p 00000000 00:00 0 
+7f4bc00000-7f4bc03000 ---p 00000000 00:00 0 
+7f4bc03000-7f4be00000 rw-p 00000000 00:00 0 
+7f4be00000-7f4be03000 ---p 00000000 00:00 0 
+7f4be03000-7f4c000000 rw-p 00000000 00:00 0 
+7f4c000000-7f4c021000 rw-p 00000000 00:00 0 
+7f4c021000-7f50000000 ---p 00000000 00:00 0 
+7f501ff000-7f50202000 ---p 00000000 00:00 0 
+7f50202000-7f503ff000 rw-p 00000000 00:00 0 
+7f503ff000-7f50402000 ---p 00000000 00:00 0 
+7f50402000-7f507ff000 rw-p 00000000 00:00 0 
+7f507ff000-7f54000000 rw-p 00000000 00:00 0 
+7f54000000-7f54021000 rw-p 00000000 00:00 0 
+7f54021000-7f58000000 ---p 00000000 00:00 0 
+7f58000000-7f58021000 rw-p 00000000 00:00 0 
+7f58021000-7f5c000000 ---p 00000000 00:00 0 
+7f5c000000-7f5d125000 rw-p 00000000 00:00 0 
+7f5d125000-7f60000000 ---p 00000000 00:00 0 
+7f60000000-7f605a2000 rw-p 00000000 00:00 0 
+7f605a2000-7f64000000 ---p 00000000 00:00 0 
+7f64000000-7f64021000 rw-p 00000000 00:00 0 
+7f64021000-7f68000000 ---p 00000000 00:00 0 
+7f68000000-7f69bb6000 rw-p 00000000 00:00 0 
+7f69bb6000-7f6c000000 ---p 00000000 00:00 0 
+7f6c000000-7f6c021000 rw-p 00000000 00:00 0 
+7f6c021000-7f70000000 ---p 00000000 00:00 0 
+7f70000000-7f70021000 rw-p 00000000 00:00 0 
+7f70021000-7f74000000 ---p 00000000 00:00 0 
+7f74000000-7f74021000 rw-p 00000000 00:00 0 
+7f74021000-7f78000000 ---p 00000000 00:00 0 
+7f78016000-7f78026000 r-xp 00000000 b3:01 1190082                        /usr/lib/jvm/java-8-openjdk-arm64/jre/lib/aarch64/libnio.so
+7f78026000-7f78035000 ---p 00010000 b3:01 1190082                        /usr/lib/jvm/java-8-openjdk-arm64/jre/lib/aarch64/libnio.so
+7f78035000-7f78036000 r--p 0000f000 b3:01 1190082                        /usr/lib/jvm/java-8-openjdk-arm64/jre/lib/aarch64/libnio.so
+7f78036000-7f78037000 rw-p 00010000 b3:01 1190082                        /usr/lib/jvm/java-8-openjdk-arm64/jre/lib/aarch64/libnio.so
+7f78037000-7f7804a000 r--s 00346000 b3:01 1190054                        /usr/lib/jvm/java-8-openjdk-arm64/jre/lib/resources.jar
+7f7804a000-7f78060000 r-xp 00000000 b3:01 1190079                        /usr/lib/jvm/java-8-openjdk-arm64/jre/lib/aarch64/libnet.so
+7f78060000-7f7806f000 ---p 00016000 b3:01 1190079                        /usr/lib/jvm/java-8-openjdk-arm64/jre/lib/aarch64/libnet.so
+7f7806f000-7f78070000 r--p 00015000 b3:01 1190079                        /usr/lib/jvm/java-8-openjdk-arm64/jre/lib/aarch64/libnet.so
+7f78070000-7f78071000 rw-p 00016000 b3:01 1190079                        /usr/lib/jvm/java-8-openjdk-arm64/jre/lib/aarch64/libnet.so
+7f78071000-7f78073000 r--s 00016000 b3:01 1190053                        /usr/lib/jvm/java-8-openjdk-arm64/jre/lib/jce.jar
+7f78073000-7f78074000 r-xp 00000000 b3:01 1190060                        /usr/lib/jvm/java-8-openjdk-arm64/jre/lib/aarch64/libjaas_unix.so
+7f78074000-7f78084000 ---p 00001000 b3:01 1190060                        /usr/lib/jvm/java-8-openjdk-arm64/jre/lib/aarch64/libjaas_unix.so
+7f78084000-7f78085000 r--p 00001000 b3:01 1190060                        /usr/lib/jvm/java-8-openjdk-arm64/jre/lib/aarch64/libjaas_unix.so
+7f78085000-7f78086000 rw-p 00002000 b3:01 1190060                        /usr/lib/jvm/java-8-openjdk-arm64/jre/lib/aarch64/libjaas_unix.so
+7f78086000-7f78286000 rw-p 00000000 00:00 0 
+7f78286000-7f7828e000 r-xp 00000000 b3:01 1190062                        /usr/lib/jvm/java-8-openjdk-arm64/jre/lib/aarch64/libmanagement.so
+7f7828e000-7f7829d000 ---p 00008000 b3:01 1190062                        /usr/lib/jvm/java-8-openjdk-arm64/jre/lib/aarch64/libmanagement.so
+7f7829d000-7f7829e000 r--p 00007000 b3:01 1190062                        /usr/lib/jvm/java-8-openjdk-arm64/jre/lib/aarch64/libmanagement.so
+7f7829e000-7f7829f000 rw-p 00008000 b3:01 1190062                        /usr/lib/jvm/java-8-openjdk-arm64/jre/lib/aarch64/libmanagement.so
+7f7829f000-7f7849f000 rw-p 00000000 00:00 0 
+7f7849f000-7f784a7000 r--s 00049000 b3:01 939041                         /home/nvidia/.m2/repository/backport-util-concurrent/backport-util-concurrent/3.1/backport-util-concurrent-3.1.jar
+7f784a7000-7f784a9000 r--s 0000a000 b3:01 786564                         /home/nvidia/.m2/repository/org/apache/maven/maven-plugin-api/3.5.3/maven-plugin-api-3.5.3.jar
+7f784a9000-7f784ab000 r--s 00003000 b3:01 937103                         /home/nvidia/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.16/jcl-over-slf4j-1.7.16.jar
+7f784ab000-7f784b0000 r--s 0009d000 b3:01 1190042                        /usr/lib/jvm/java-8-openjdk-arm64/jre/lib/jsse.jar
+7f784b0000-7f78531000 r--s 005dc000 b3:01 839694                         /home/nvidia/.m2/repository/org/apache/spark/spark-sql_2.11/2.1.0/spark-sql_2.11-2.1.0.jar
+7f78531000-7f78533000 r--s 00007000 b3:01 1319585                        /home/nvidia/.m2/repository/org/apache/maven/resolver/maven-resolver-spi/1.1.1/maven-resolver-spi-1.1.1.jar
+7f78533000-7f78537000 r--s 00029000 b3:01 937140                         /home/nvidia/.m2/repository/org/glassfish/hk2/hk2-locator/2.4.0-b34/hk2-locator-2.4.0-b34.jar
+7f78537000-7f78538000 r--s 00000000 b3:01 1448982                        /home/nvidia/.m2/repository/org/jcuda/jcufft-natives/0.9.0d/jcufft-natives-0.9.0d-linux-aarch64.jar
+7f78538000-7f78541000 r--s 00077000 b3:01 927314                         /home/nvidia/.m2/repository/com/ibm/gpu-enabler_2.11/2.0.0/gpu-enabler_2.11-2.0.0.jar
+7f78541000-7f78546000 r--s 00032000 b3:01 937010                         /home/nvidia/.m2/repository/com/twitter/chill_2.11/0.8.0/chill_2.11-0.8.0.jar
+7f78546000-7f78548000 r--s 0000f000 b3:01 1319562                        /home/nvidia/.m2/repository/org/apache/maven/maven-resolver-provider/3.5.3/maven-resolver-provider-3.5.3.jar
+7f78548000-7f7854a000 r--s 00007000 b3:01 939022                         /home/nvidia/.m2/repository/org/apache/maven/maven-profile/2.2.1/maven-profile-2.2.1.jar
+7f7854a000-7f7854e000 r--s 0002c000 b3:01 936998                         /home/nvidia/.m2/repository/org/apache/avro/avro-ipc/1.7.7/avro-ipc-1.7.7.jar
+7f7854e000-7f78550000 r--s 00010000 b3:01 937154                         /home/nvidia/.m2/repository/org/glassfish/jersey/media/jersey-media-jaxb/2.22.2/jersey-media-jaxb-2.22.2.jar
+7f78550000-7f78552000 r--s 0000f000 b3:01 839677                         /home/nvidia/.m2/repository/org/apache/spark/spark-launcher_2.11/2.1.0/spark-launcher_2.11-2.1.0.jar
+7f78552000-7f78554000 r--s 00100000 b3:01 937111                         /home/nvidia/.m2/repository/org/xerial/snappy/snappy-java/1.1.2.6/snappy-java-1.1.2.6.jar
+7f78554000-7f78556000 r--s 00005000 b3:01 937147                         /home/nvidia/.m2/repository/javax/annotation/javax.annotation-api/1.2/javax.annotation-api-1.2.jar
+7f78556000-7f78566000 r--s 00089000 b3:01 1063262                        /home/nvidia/.m2/repository/org/scalacheck/scalacheck/1.2/scalacheck-1.2.jar
+7f78566000-7f78568000 r--s 00004000 b3:01 937175                         /home/nvidia/.m2/repository/io/dropwizard/metrics/metrics-graphite/3.1.2/metrics-graphite-3.1.2.jar
+7f78568000-7f7856a000 r--s 0000b000 b3:01 1193266                        /home/nvidia/.m2/repository/org/codehaus/plexus/plexus-classworlds/2.5.2/plexus-classworlds-2.5.2.jar
+7f7856a000-7f78571000 r--s 00041000 b3:01 1193259                        /home/nvidia/.m2/repository/org/apache/maven/maven-compat/3.5.3/maven-compat-3.5.3.jar
+7f78571000-7f78575000 r--s 0003c000 b3:01 937177                         /home/nvidia/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.6.5/jackson-core-2.6.5.jar
+7f78575000-7f78576000 r--s 00005000 b3:01 1319604                        /home/nvidia/.m2/repository/org/apache/maven/maven-archiver/3.2.0/maven-archiver-3.2.0.jar
+7f78576000-7f7857a000 r--s 00029000 b3:01 1063244                        /home/nvidia/.m2/repository/org/scalanlp/breeze-macros_2.11/0.12/breeze-macros_2.11-0.12.jar
+7f7857a000-7f7857f000 r--s 0002a000 b3:01 937038                         /home/nvidia/.m2/repository/commons-beanutils/commons-beanutils/1.7.0/commons-beanutils-1.7.0.jar
+7f7857f000-7f78580000 r--s 00006000 b3:01 1319556                        /home/nvidia/.m2/repository/org/sonatype/plexus/plexus-sec-dispatcher/1.4/plexus-sec-dispatcher-1.4.jar
+7f78580000-7f78583000 r--s 00011000 b3:01 1319571                        /home/nvidia/.m2/repository/org/codehaus/plexus/plexus-interpolation/1.24/plexus-interpolation-1.24.jar
+7f78583000-7f78585000 r--s 00003000 b3:01 937159                         /home/nvidia/.m2/repository/org/glassfish/jersey/containers/jersey-container-servlet/2.22.2/jersey-container-servlet-2.22.2.jar
+7f78585000-7f78588000 r--s 0000d000 b3:01 839681                         /home/nvidia/.m2/repository/org/apache/spark/spark-network-shuffle_2.11/2.1.0/spark-network-shuffle_2.11-2.1.0.jar
+7f78588000-7f7858c000 r--s 0002f000 b3:01 938666                         /home/nvidia/.m2/repository/commons-io/commons-io/2.5/commons-io-2.5.jar
+7f7858c000-7f7858e000 r--s 00003000 b3:01 937079                         /home/nvidia/.m2/repository/org/apache/hadoop/hadoop-annotations/2.2.0/hadoop-annotations-2.2.0.jar
+7f7858e000-7f7859f000 r--s 000bb000 b3:01 839676                         /home/nvidia/.m2/repository/org/apache/commons/commons-math/2.1/commons-math-2.1.jar
+7f7859f000-7f785a2000 r--s 00028000 b3:01 937167                         /home/nvidia/.m2/repository/com/clearspring/analytics/stream/2.7.0/stream-2.7.0.jar
+7f785a2000-7f785a5000 r--s 00012000 b3:01 937124                         /home/nvidia/.m2/repository/org/json4s/json4s-ast_2.11/3.2.11/json4s-ast_2.11-3.2.11.jar
+7f785a5000-7f785a9000 r--s 00030000 b3:01 937118                         /home/nvidia/.m2/repository/commons-net/commons-net/2.2/commons-net-2.2.jar
+7f785a9000-7f785ae000 r--s 00027000 b3:01 937091                         /home/nvidia/.m2/repository/org/apache/curator/curator-framework/2.4.0/curator-framework-2.4.0.jar
+7f785ae000-7f785b3000 r--s 00031000 b3:01 937201                         /home/nvidia/.m2/repository/org/apache/parquet/parquet-hadoop/1.8.1/parquet-hadoop-1.8.1.jar
+7f785b3000-7f785b4000 r--s 00003000 b3:01 937026                         /home/nvidia/.m2/repository/xmlenc/xmlenc/0.52/xmlenc-0.52.jar
+7f785b4000-7f785b6000 r--s 00009000 b3:01 937184                         /home/nvidia/.m2/repository/com/fasterxml/jackson/module/jackson-module-paranamer/2.6.5/jackson-module-paranamer-2.6.5.jar
+7f785b6000-7f785bb000 r--s 00028000 b3:01 839671                         /home/nvidia/.m2/repository/org/apache/avro/avro-mapred/1.7.7/avro-mapred-1.7.7-hadoop2.jar
+7f785bb000-7f785c2000 r--s 00051000 b3:01 937011                         /home/nvidia/.m2/repository/com/esotericsoftware/kryo-shaded/3.0.3/kryo-shaded-3.0.3.jar
+7f785c2000-7f78607000 r--s 004bb000 b3:01 937051                         /home/nvidia/.m2/repository/org/apache/hadoop/hadoop-hdfs/2.2.0/hadoop-hdfs-2.2.0.jar
+7f78607000-7f7860d000 r--s 00044000 b3:01 937214                         /home/nvidia/.m2/repository/org/antlr/antlr4-runtime/4.5.3/antlr4-runtime-4.5.3.jar
+7f7860d000-7f7860f000 r--s 00008000 b3:01 937198                         /home/nvidia/.m2/repository/org/apache/parquet/parquet-common/1.8.1/parquet-common-1.8.1.jar
+7f7860f000-7f78619000 r--s 00092000 b3:01 937218                         /home/nvidia/.m2/repository/org/scala-lang/scala-xml/2.11.0-M4/scala-xml-2.11.0-M4.jar
+7f78619000-7f78645000 r--s 001c9000 b3:01 1063254                        /home/nvidia/.m2/repository/com/chuusai/shapeless_2.11/2.0.0/shapeless_2.11-2.0.0.jar
+7f78645000-7f78649000 r--s 0002a000 b3:01 1319570                        /home/nvidia/.m2/repository/org/apache/maven/resolver/maven-resolver-impl/1.1.1/maven-resolver-impl-1.1.1.jar
+7f78649000-7f7864b000 r--s 00000000 b3:01 1319551                        /home/nvidia/.m2/repository/org/codehaus/plexus/plexus-component-annotations/1.7.1/plexus-component-annotations-1.7.1.jar
+7f7864b000-7f7864f000 r--s 00028000 b3:01 937052                         /home/nvidia/.m2/repository/org/mortbay/jetty/jetty-util/6.1.26/jetty-util-6.1.26.jar
+7f7864f000-7f78655000 r--s 00040000 b3:01 937199                         /home/nvidia/.m2/repository/org/apache/parquet/parquet-encoding/1.8.1/parquet-encoding-1.8.1.jar
+7f78655000-7f78658000 r--s 0000e000 b3:01 937092                         /home/nvidia/.m2/repository/org/apache/curator/curator-client/2.4.0/curator-client-2.4.0.jar
+7f78658000-7f78661000 r--s 0005f000 b3:01 1319592                        /home/nvidia/.m2/repository/com/google/inject/guice/4.0/guice-4.0-no_aop.jar
+7f78661000-7f78664000 r--s 0002f000 b3:01 937116                         /home/nvidia/.m2/repository/org/roaringbitmap/RoaringBitmap/0.5.11/RoaringBitmap-0.5.11.jar
+7f78664000-7f78666000 r--s 00011000 b3:01 1063267                        /home/nvidia/.m2/repository/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar
+7f78666000-7f78668000 r--s 00001000 b3:01 1449004                        /home/nvidia/.m2/repository/org/jcuda/jcurand/0.9.0d/jcurand-0.9.0d.jar
+7f78668000-7f7866a000 r--s 0000e000 b3:01 937186                         /home/nvidia/.m2/repository/oro/oro/2.0.8/oro-2.0.8.jar
+7f7866a000-7f7866d000 r--s 00019000 b3:01 1063268                        /home/nvidia/.m2/repository/org/hamcrest/hamcrest-library/1.1/hamcrest-library-1.1.jar
+7f7866d000-7f7869a000 r--s 00234000 b3:01 1319619                        /home/nvidia/.m2/repository/com/typesafe/sbt/incremental-compiler/0.13.15/incremental-compiler-0.13.15.jar
+7f7869a000-7f7869c000 r--s 00002000 b3:01 937137                         /home/nvidia/.m2/repository/org/glassfish/hk2/external/aopalliance-repackaged/2.4.0-b34/aopalliance-repackaged-2.4.0-b34.jar
+7f7869c000-7f786a0000 r--s 0001a000 b3:01 937134                         /home/nvidia/.m2/repository/org/glassfish/hk2/hk2-utils/2.4.0-b34/hk2-utils-2.4.0-b34.jar
+7f786a0000-7f786a4000 r--s 0000f000 b3:01 1193263                        /home/nvidia/.m2/repository/org/codehaus/plexus/plexus-io/3.0.1/plexus-io-3.0.1.jar
+7f786a4000-7f786af000 r--s 0007e000 b3:01 1319591                        /home/nvidia/.m2/repository/org/apache/commons/commons-compress/1.16.1/commons-compress-1.16.1.jar
+7f786af000-7f786b3000 r--s 00017000 b3:01 1319603                        /home/nvidia/.m2/repository/org/tukaani/xz/1.8/xz-1.8.jar
+7f786b3000-7f786d7000 r--s 001cd000 b3:01 839687                         /home/nvidia/.m2/repository/org/apache/commons/commons-math3/3.4.1/commons-math3-3.4.1.jar
+7f786d7000-7f786da000 r--s 00015000 b3:01 937097                         /home/nvidia/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar
+7f786da000-7f786de000 r--s 0002f000 b3:01 937039                         /home/nvidia/.m2/repository/commons-beanutils/commons-beanutils-core/1.8.0/commons-beanutils-core-1.8.0.jar
+7f786de000-7f78767000 r--s 00682000 b3:01 839697                         /home/nvidia/.m2/repository/org/apache/spark/spark-catalyst_2.11/2.1.0/spark-catalyst_2.11-2.1.0.jar
+7f78767000-7f78768000 r--s 00000000 b3:01 937061                         /home/nvidia/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar
+7f78768000-7f78791000 r--s 001ee000 b3:01 936915                         /home/nvidia/.m2/repository/com/google/guava/guava/14.0.1/guava-14.0.1.jar
+7f78791000-7f78798000 r--s 0003f000 b3:01 937215                         /home/nvidia/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar
+7f78798000-7f7879a000 r--s 0000b000 b3:01 1319621                        /home/nvidia/.m2/repository/com/typesafe/sbt/sbt-interface/0.13.15/sbt-interface-0.13.15.jar
+7f7879a000-7f7879c000 r--s 00008000 b3:01 934376                         /home/nvidia/.m2/repository/classworlds/classworlds/1.1-alpha-2/classworlds-1.1-alpha-2.jar
+7f7879c000-7f787a1000 r--s 00027000 b3:01 937133                         /home/nvidia/.m2/repository/org/glassfish/hk2/hk2-api/2.4.0-b34/hk2-api-2.4.0-b34.jar
+7f787a1000-7f787a2000 r--s 00007000 b3:01 1319623                        /home/nvidia/.m2/repository/com/typesafe/sbt/compiler-interface/0.13.15/compiler-interface-0.13.15-sources.jar
+7f787a2000-7f787a5000 r--s 00006000 b3:01 937098                         /home/nvidia/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar
+7f787a5000-7f787a9000 r--s 00028000 b3:01 839792                         /home/nvidia/.m2/repository/org/apache/spark/spark-mllib-local_2.11/2.1.0/spark-mllib-local_2.11-2.1.0.jar
+7f787a9000-7f787ab000 r--s 00005000 b3:01 1449039                        /home/nvidia/.m2/repository/org/jcuda/jcusolver/0.9.0d/jcusolver-0.9.0d.jar
+7f787ab000-7f787af000 r--s 00023000 b3:01 1319566                        /home/nvidia/.m2/repository/org/apache/maven/resolver/maven-resolver-util/1.1.1/maven-resolver-util-1.1.1.jar
+7f787af000-7f787ba000 r--s 000b0000 b3:01 1063249                        /home/nvidia/.m2/repository/com/github/rwl/jtransforms/2.4.0/jtransforms-2.4.0.jar
+7f787ba000-7f787bc000 r--s 00002000 b3:01 936954                         /home/nvidia/.m2/repository/org/sonatype/plexus/plexus-cipher/1.4/plexus-cipher-1.4.jar
+7f787bc000-7f787be000 r--s 00038000 b3:01 937114                         /home/nvidia/.m2/repository/net/jpountz/lz4/lz4/1.3.0/lz4-1.3.0.jar
+7f787be000-7f787c2000 r--s 0000c000 b3:01 937157                         /home/nvidia/.m2/repository/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar
+7f787c2000-7f787c6000 r--s 0001d000 b3:01 1063486                        /home/nvidia/.m2/repository/org/eclipse/aether/aether-util/0.9.0.M2/aether-util-0.9.0.M2.jar
+7f787c6000-7f787c8000 r--s 00006000 b3:01 839690                         /home/nvidia/.m2/repository/org/apache/spark/spark-sketch_2.11/2.1.0/spark-sketch_2.11-2.1.0.jar
+7f787c8000-7f787c9000 r--s 00006000 b3:01 1319564                        /home/nvidia/.m2/repository/org/apache/maven/maven-repository-metadata/3.5.3/maven-repository-metadata-3.5.3.jar
+7f787c9000-7f787cd000 r--s 00035000 b3:01 937005                         /home/nvidia/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.13/jackson-core-asl-1.9.13.jar
+7f787cd000-7f787cf000 r--s 0000b000 b3:01 937044                         /home/nvidia/.m2/repository/org/apache/hadoop/hadoop-auth/2.2.0/hadoop-auth-2.2.0.jar
+7f787cf000-7f787fd000 r--s 001d3000 b3:01 839788                         /home/nvidia/.m2/repository/org/apache/spark/spark-streaming_2.11/2.1.0/spark-streaming_2.11-2.1.0.jar
+7f787fd000-7f787fe000 r--s 00001000 b3:01 937015                         /home/nvidia/.m2/repository/com/esotericsoftware/minlog/1.3.0/minlog-1.3.0.jar
+7f787fe000-7f7884a000 r--s 00411000 b3:01 937200                         /home/nvidia/.m2/repository/org/scala-lang/scala-reflect/2.11.8/scala-reflect-2.11.8.jar
+7f7884a000-7f7886b000 rw-p 00000000 00:00 0 
+7f7886b000-7f7893b000 r--s 00cf0000 b3:01 1063243                        /home/nvidia/.m2/repository/org/scalanlp/breeze_2.11/0.12/breeze_2.11-0.12.jar
+7f7893b000-7f78943000 r--s 0006e000 b3:01 839684                         /home/nvidia/.m2/repository/org/apache/commons/commons-lang3/3.5/commons-lang3-3.5.jar
+7f78943000-7f78944000 r--s 00001000 b3:01 1193261                        /home/nvidia/.m2/repository/javax/annotation/jsr250-api/1.0/jsr250-api-1.0.jar
+7f78944000-7f78953000 r--s 0009f000 b3:01 937060                         /home/nvidia/.m2/repository/com/google/inject/guice/3.0/guice-3.0.jar
+7f78953000-7f78957000 r--s 00020000 b3:01 1319565                        /home/nvidia/.m2/repository/org/apache/maven/resolver/maven-resolver-api/1.1.1/maven-resolver-api-1.1.1.jar
+7f78957000-7f78959000 r--s 0001c000 b3:01 1463273                        /home/nvidia/.m2/repository/net/alchim31/maven/scala-maven-plugin/3.4.1/scala-maven-plugin-3.4.1.jar
+7f78959000-7f7895a000 r--s 00003000 b3:01 937172                         /home/nvidia/.m2/repository/io/dropwizard/metrics/metrics-json/3.1.2/metrics-json-3.1.2.jar
+7f7895a000-7f7895d000 r--s 00008000 b3:01 1319577                        /home/nvidia/.m2/repository/javax/enterprise/cdi-api/1.0/cdi-api-1.0.jar
+7f7895d000-7f78964000 r--s 00058000 b3:01 937204                         /home/nvidia/.m2/repository/org/apache/parquet/parquet-format/2.3.0-incubating/parquet-format-2.3.0-incubating.jar
+7f78964000-7f78967000 r--s 000fd000 b3:01 937033                         /home/nvidia/.m2/repository/org/fusesource/leveldbjni/leveldbjni-all/1.8/leveldbjni-all-1.8.jar
+7f78967000-7f78968000 r--s 00002000 b3:01 936917                         /home/nvidia/.m2/repository/org/apache/maven/reporting/maven-reporting-api/3.0/maven-reporting-api-3.0.jar
+7f78968000-7f78972000 r--s 000aa000 b3:01 937210                         /home/nvidia/.m2/repository/org/codehaus/janino/janino/3.0.0/janino-3.0.0.jar
+7f78972000-7f78974000 r--s 00008000 b3:01 937169                         /home/nvidia/.m2/repository/io/dropwizard/metrics/metrics-jvm/3.1.2/metrics-jvm-3.1.2.jar
+7f78974000-7f78976000 r--s 0000f000 b3:01 939010                         /home/nvidia/.m2/repository/org/apache/maven/maven-artifact-manager/2.2.1/maven-artifact-manager-2.2.1.jar
+7f78976000-7f78987000 r--s 0010d000 b3:01 937176                         /home/nvidia/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.6.5/jackson-databind-2.6.5.jar
+7f78987000-7f78989000 r--s 00014000 b3:01 1063253                        /home/nvidia/.m2/repository/org/spire-math/spire-macros_2.11/0.7.4/spire-macros_2.11-0.7.4.jar
+7f78989000-7f7898b000 r--s 00000000 b3:01 937064                         /home/nvidia/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar
+7f7898b000-7f78992000 r--s 00056000 b3:01 1319590                        /home/nvidia/.m2/repository/org/eclipse/sisu/org.eclipse.sisu.inject/0.3.3/org.eclipse.sisu.inject-0.3.3.jar
+7f78992000-7f78996000 r--s 00018000 b3:01 937168                         /home/nvidia/.m2/repository/io/dropwizard/metrics/metrics-core/3.1.2/metrics-core-3.1.2.jar
+7f78996000-7f78997000 r--s 00000000 b3:01 1448999                        /home/nvidia/.m2/repository/org/jcuda/jcurand-natives/0.9.0d/jcurand-natives-0.9.0d-linux-aarch64.jar
+7f78997000-7f7899e000 r--s 0005a000 b3:01 1319615                        /home/nvidia/.m2/repository/com/typesafe/zinc/zinc/0.3.15/zinc-0.3.15.jar
+7f7899e000-7f7899f000 r--s 00008000 b3:01 937075                         /home/nvidia/.m2/repository/org/apache/hadoop/hadoop-mapreduce-client-jobclient/2.2.0/hadoop-mapreduce-client-jobclient-2.2.0.jar
+7f7899f000-7f789a0000 r--s 00007000 b3:01 1448970                        /home/nvidia/.m2/repository/org/jcuda/jcublas/0.9.0d/jcublas-0.9.0d.jar
+7f789a0000-7f789a6000 r--s 00045000 b3:01 937085                         /home/nvidia/.m2/repository/commons-httpclient/commons-httpclient/3.1/commons-httpclient-3.1.jar
+7f789a6000-7f789a7000 r--s 00002000 b3:01 1319610                        /home/nvidia/.m2/repository/org/apache/maven/doxia/doxia-logging-api/1.8/doxia-logging-api-1.8.jar
+7f789a7000-7f789aa000 r--s 00015000 b3:01 937187                         /home/nvidia/.m2/repository/net/razorvine/pyrolite/4.13/pyrolite-4.13.jar
+7f789aa000-7f789ad000 r--s 0001a000 b3:01 937191                         /home/nvidia/.m2/repository/net/sf/py4j/py4j/0.10.4/py4j-0.10.4.jar
+7f789ad000-7f789ae000 r--s 00000000 b3:01 937185                         /home/nvidia/.m2/repository/org/spark-project/spark/unused/1.0.0/unused-1.0.0.jar
+7f789ae000-7f789af000 r--s 00002000 b3:01 937109                         /home/nvidia/.m2/repository/org/slf4j/slf4j-log4j12/1.7.16/slf4j-log4j12-1.7.16.jar
+7f789af000-7f789b1000 r--s 00009000 b3:01 937016                         /home/nvidia/.m2/repository/org/objenesis/objenesis/2.1/objenesis-2.1.jar
+7f789b1000-7f789b3000 r--s 00009000 b3:01 937023                         /home/nvidia/.m2/repository/commons-cli/commons-cli/1.2/commons-cli-1.2.jar
+7f789b3000-7f789b9000 r--s 0002d000 b3:01 1319572                        /home/nvidia/.m2/repository/org/eclipse/sisu/org.eclipse.sisu.plexus/0.3.3/org.eclipse.sisu.plexus-0.3.3.jar
+7f789b9000-7f789ba000 r--s 00002000 b3:01 1448987                        /home/nvidia/.m2/repository/org/jcuda/jcufft/0.9.0d/jcufft-0.9.0d.jar
+7f789ba000-7f78a91000 r--s 00a7f000 b3:01 839669                         /home/nvidia/.m2/repository/org/apache/spark/spark-core_2.11/2.1.0/spark-core_2.11-2.1.0.jar
+7f78a91000-7f78a95000 r--s 0002f000 b3:01 1063264                        /home/nvidia/.m2/repository/org/jmock/jmock/2.4.0/jmock-2.4.0.jar
+7f78a95000-7f78aa3000 r--s 0009d000 b3:01 839790                         /home/nvidia/.m2/repository/org/apache/spark/spark-graphx_2.11/2.1.0/spark-graphx_2.11-2.1.0.jar
+7f78aa3000-7f78aa5000 r--s 00009000 b3:01 1319554                        /home/nvidia/.m2/repository/org/apache/maven/maven-settings-builder/3.5.3/maven-settings-builder-3.5.3.jar
+7f78aa5000-7f78ab3000 r--s 0007f000 b3:01 937034                         /home/nvidia/.m2/repository/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar
+7f78ab3000-7f78ab4000 r--s 00008000 b3:01 937211                         /home/nvidia/.m2/repository/org/codehaus/janino/commons-compiler/3.0.0/commons-compiler-3.0.0.jar
+7f78ab4000-7f78ab5000 r--s 00000000 b3:01 1449034                        /home/nvidia/.m2/repository/org/jcuda/jcusolver-natives/0.9.0d/jcusolver-natives-0.9.0d-linux-aarch64.jar
+7f78ab5000-7f78ab7000 r--s 00000000 b3:01 937099                         /home/nvidia/.m2/repository/org/slf4j/jul-to-slf4j/1.7.16/jul-to-slf4j-1.7.16.jar
+7f78ab7000-7f78abb000 r--s 00020000 b3:01 937035                         /home/nvidia/.m2/repository/commons-digester/commons-digester/1.8/commons-digester-1.8.jar
+7f78abb000-7f78ac1000 r--s 00043000 b3:01 937032                         /home/nvidia/.m2/repository/commons-configuration/commons-configuration/1.6/commons-configuration-1.6.jar
+7f78ac1000-7f78ac3000 r--s 00007000 b3:01 937127                         /home/nvidia/.m2/repository/com/thoughtworks/paranamer/paranamer/2.6/paranamer-2.6.jar
+7f78ac3000-7f78ac5000 r--s 0000d000 b3:01 938673                         /home/nvidia/.m2/repository/org/iq80/snappy/snappy/0.4/snappy-0.4.jar
+7f78ac5000-7f78ad2000 r--s 00071000 b3:01 937180                         /home/nvidia/.m2/repository/com/fasterxml/jackson/module/jackson-module-scala_2.11/2.6.5/jackson-module-scala_2.11-2.6.5.jar
+7f78ad2000-7f78ade000 r--s 000b3000 b3:01 937093                         /home/nvidia/.m2/repository/org/apache/zookeeper/zookeeper/3.4.5/zookeeper-3.4.5.jar
+7f78ade000-7f78ae0000 r--s 00004000 b3:01 937068                         /home/nvidia/.m2/repository/org/apache/hadoop/hadoop-mapreduce-client-shuffle/2.2.0/hadoop-mapreduce-client-shuffle-2.2.0.jar
+7f78ae0000-7f78ae2000 r--s 00012000 b3:01 937110                         /home/nvidia/.m2/repository/com/ning/compress-lzf/1.0.3/compress-lzf-1.0.3.jar
+7f78ae2000-7f78ae4000 r--s 0000c000 b3:01 1319558                        /home/nvidia/.m2/repository/org/apache/maven/maven-artifact/3.5.3/maven-artifact-3.5.3.jar
+7f78ae4000-7f78aeb000 r--s 0004e000 b3:01 937003                         /home/nvidia/.m2/repository/org/apache/avro/avro-ipc/1.7.7/avro-ipc-1.7.7-tests.jar
+7f78aeb000-7f78aef000 r--s 00025000 b3:01 937128                         /home/nvidia/.m2/repository/org/glassfish/jersey/core/jersey-client/2.22.2/jersey-client-2.22.2.jar
+7f78aef000-7f78b01000 r--s 0012c000 b3:01 937073                         /home/nvidia/.m2/repository/org/apache/hadoop/hadoop-yarn-common/2.2.0/hadoop-yarn-common-2.2.0.jar
+7f78b01000-7f78b05000 r--s 00019000 b3:01 937131                         /home/nvidia/.m2/repository/javax/ws/rs/javax.ws.rs-api/2.0.1/javax.ws.rs-api-2.0.1.jar
+7f78b05000-7f78b16000 r--s 0010a000 b3:01 937069                         /home/nvidia/.m2/repository/org/apache/hadoop/hadoop-yarn-api/2.2.0/hadoop-yarn-api-2.2.0.jar
+7f78b16000-7f78b24000 r--s 000b1000 b3:01 937007                         /home/nvidia/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.13/jackson-mapper-asl-1.9.13.jar
+7f78b24000-7f78b3a000 r--s 000d1000 b3:01 937195                         /home/nvidia/.m2/repository/org/apache/parquet/parquet-column/1.8.1/parquet-column-1.8.1.jar
+7f78b3a000-7f78b3e000 r--s 00027000 b3:01 937065                         /home/nvidia/.m2/repository/org/apache/hadoop/hadoop-yarn-server-common/2.2.0/hadoop-yarn-server-common-2.2.0.jar
+7f78b3e000-7f78b3f000 r--s 00002000 b3:01 1319608                        /home/nvidia/.m2/repository/org/apache/maven/doxia/doxia-sink-api/1.8/doxia-sink-api-1.8.jar
+7f78b3f000-7f78b41000 r--s 00027000 b3:01 1063238                        /home/nvidia/.m2/repository/com/github/fommil/netlib/core/1.1.2/core-1.1.2.jar
+7f78b41000-7f78b42000 r--s 0000a000 b3:01 1319552                        /home/nvidia/.m2/repository/org/apache/maven/maven-settings/3.5.3/maven-settings-3.5.3.jar
+7f78b42000-7f78b4c000 r--s 00086000 b3:01 937123                         /home/nvidia/.m2/repository/org/json4s/json4s-core_2.11/3.2.11/json4s-core_2.11-3.2.11.jar
+7f78b4c000-7f78b4f000 r--s 00021000 b3:01 839673                         /home/nvidia/.m2/repository/org/apache/xbean/xbean-asm5-shaded/4.4/xbean-asm5-shaded-4.4.jar
+7f78b4f000-7f78b51000 r--s 00003000 b3:01 1449058                        /home/nvidia/.m2/repository/org/jcuda/jnvgraph/0.9.0d/jnvgraph-0.9.0d.jar
+7f78b51000-7f78b52000 r--s 00009000 b3:01 937101                         /home/nvidia/.m2/repository/org/slf4j/slf4j-api/1.7.16/slf4j-api-1.7.16.jar
+7f78b52000-7f78b5b000 r--s 0006d000 b3:01 937054                         /home/nvidia/.m2/repository/org/apache/hadoop/hadoop-mapreduce-client-app/2.2.0/hadoop-mapreduce-client-app-2.2.0.jar
+7f78b5b000-7f78b60000 r--s 00023000 b3:01 839794                         /home/nvidia/.m2/repository/junit/junit/4.4/junit-4.4.jar
+7f78b60000-7f78b64000 r--s 00023000 b3:01 939032                         /home/nvidia/.m2/repository/org/apache/maven/maven-project/2.2.1/maven-project-2.2.1.jar
+7f78b64000-7f78b67000 r--s 00009000 b3:01 937082                         /home/nvidia/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.6.5/jackson-annotations-2.6.5.jar
+7f78b67000-7f78b8e000 r--s 0020f000 b3:01 937162                         /home/nvidia/.m2/repository/io/netty/netty-all/4.0.42.Final/netty-all-4.0.42.Final.jar
+7f78b8e000-7f78c02000 r--s 00572000 b3:01 839786                         /home/nvidia/.m2/repository/org/apache/spark/spark-mllib_2.11/2.1.0/spark-mllib_2.11-2.1.0.jar
+7f78c02000-7f78c5b000 r--s 00522000 b3:01 936913                         /home/nvidia/.m2/repository/org/scala-lang/scala-library/2.11.8/scala-library-2.11.8.jar
+7f78c5b000-7f78c64000 r--s 0006f000 b3:01 937107                         /home/nvidia/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar
+7f78c64000-7f78c69000 r--s 0002a000 b3:01 1319597                        /home/nvidia/.m2/repository/org/codehaus/plexus/plexus-archiver/3.6.0/plexus-archiver-3.6.0.jar
+7f78c69000-7f78c6b000 r--s 00007000 b3:01 1319593                        /home/nvidia/.m2/repository/org/apache/maven/shared/maven-dependency-tree/3.0.1/maven-dependency-tree-3.0.1.jar
+7f78c6b000-7f78c6d000 r--s 00006000 b3:01 939033                         /home/nvidia/.m2/repository/org/apache/maven/maven-plugin-registry/2.2.1/maven-plugin-registry-2.2.1.jar
+7f78c6d000-7f78c6e000 r--s 00000000 b3:01 1449016                        /home/nvidia/.m2/repository/org/jcuda/jcusparse-natives/0.9.0d/jcusparse-natives-0.9.0d-linux-aarch64.jar
+7f78c6e000-7f78c71000 r--s 0000e000 b3:01 937160                         /home/nvidia/.m2/repository/org/glassfish/jersey/containers/jersey-container-servlet-core/2.22.2/jersey-container-servlet-core-2.22.2.jar
+7f78c71000-7f78c72000 r--s 00001000 b3:01 937138                         /home/nvidia/.m2/repository/org/glassfish/hk2/external/javax.inject/2.4.0-b34/javax.inject-2.4.0-b34.jar
+7f78c72000-7f78c7e000 r--s 00095000 b3:01 937055                         /home/nvidia/.m2/repository/org/apache/hadoop/hadoop-mapreduce-client-common/2.2.0/hadoop-mapreduce-client-common-2.2.0.jar
+7f78c7e000-7f78c80000 r--s 00009000 b3:01 1449021                        /home/nvidia/.m2/repository/org/jcuda/jcusparse/0.9.0d/jcusparse-0.9.0d.jar
+7f78c80000-7f78c89000 r--s 00062000 b3:01 937001                         /home/nvidia/.m2/repository/org/apache/avro/avro/1.7.7/avro-1.7.7.jar
+7f78c89000-7f78c8e000 r--s 00040000 b3:01 937030                         /home/nvidia/.m2/repository/commons-lang/commons-lang/2.5/commons-lang-2.5.jar
+7f78c8e000-7f78c8f000 r--s 00004000 b3:01 937149                         /home/nvidia/.m2/repository/org/glassfish/hk2/osgi-resource-locator/1.0.1/osgi-resource-locator-1.0.1.jar
+7f78c8f000-7f78c95000 r--s 0004f000 b3:01 939371                         /home/nvidia/.m2/repository/org/scalatest/scalatest/0.9.1/scalatest-0.9.1.jar
+7f78c95000-7f78cad000 r--s 0014c000 b3:01 937072                         /home/nvidia/.m2/repository/org/apache/hadoop/hadoop-mapreduce-client-core/2.2.0/hadoop-mapreduce-client-core-2.2.0.jar
+7f78cad000-7f78cc3000 r--s 00124000 b3:01 937165                         /home/nvidia/.m2/repository/org/apache/ivy/ivy/2.4.0/ivy-2.4.0.jar
+7f78cc3000-7f78cc4000 r--s 00000000 b3:01 1448947                        /home/nvidia/.m2/repository/org/jcuda/jcuda-natives/0.9.0d/jcuda-natives-0.9.0d-linux-aarch64.jar
+7f78cc4000-7f78cce000 r--s 000a5000 b3:01 937144                         /home/nvidia/.m2/repository/org/javassist/javassist/3.18.1-GA/javassist-3.18.1-GA.jar
+7f78cce000-7f78cd4000 r--s 00035000 b3:01 937088                         /home/nvidia/.m2/repository/org/apache/curator/curator-recipes/2.4.0/curator-recipes-2.4.0.jar
+7f78cd4000-7f78cd6000 r--s 0000c000 b3:01 840348                         /home/nvidia/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar
+7f78cd6000-7f78cd8000 r--s 00007000 b3:01 1319613                        /home/nvidia/.m2/repository/org/apache/maven/shared/maven-invoker/3.0.1/maven-invoker-3.0.1.jar
+7f78cd8000-7f78cd9000 r--s 00001000 b3:01 1063258                        /home/nvidia/.m2/repository/org/jpmml/pmml-schema/1.2.15/pmml-schema-1.2.15.jar
+7f78cd9000-7f78cdb000 r--s 0000b000 b3:01 937017                         /home/nvidia/.m2/repository/com/twitter/chill-java/0.8.0/chill-java-0.8.0.jar
+7f78cdb000-7f78cf1000 r--s 000d3000 b3:01 937153                         /home/nvidia/.m2/repository/org/glassfish/jersey/core/jersey-server/2.22.2/jersey-server-2.22.2.jar
+7f78cf1000-7f78cf2000 r--s 00004000 b3:01 1063246                        /home/nvidia/.m2/repository/net/sf/opencsv/opencsv/2.3/opencsv-2.3.jar
+7f78cf2000-7f78cf4000 r--s 0000a000 b3:01 1449122                        /home/nvidia/.m2/repository/org/jcuda/jcudnn/0.9.0c/jcudnn-0.9.0c.jar
+7f78cf4000-7f78d01000 r--s 0008e000 b3:01 1319553                        /home/nvidia/.m2/repository/org/apache/maven/maven-core/3.5.3/maven-core-3.5.3.jar
+7f78d01000-7f78d04000 r--s 00026000 b3:01 1319612                        /home/nvidia/.m2/repository/org/apache/maven/maven-model/3.5.3/maven-model-3.5.3.jar
+7f78d04000-7f78d1c000 r--s 00115000 b3:01 937166                         /home/nvidia/.m2/repository/io/netty/netty/3.8.0.Final/netty-3.8.0.Final.jar
+7f78d1c000-7f78d1f000 r--s 00015000 b3:01 937057                         /home/nvidia/.m2/repository/org/apache/hadoop/hadoop-yarn-client/2.2.0/hadoop-yarn-client-2.2.0.jar
+7f78d1f000-7f78d20000 r--s 00000000 b3:01 1449070                        /home/nvidia/.m2/repository/org/jcuda/jcudnn-natives/0.9.0c/jcudnn-natives-0.9.0c-linux-aarch64.jar
+7f78d20000-7f78d27000 r--s 00029000 b3:01 934374                         /home/nvidia/.m2/repository/org/codehaus/plexus/plexus-container-default/1.0-alpha-9-stable-1/plexus-container-default-1.0-alpha-9-stable-1.jar
+7f78d27000-7f78d35000 r--s 0009d000 b3:01 937145                         /home/nvidia/.m2/repository/org/glassfish/jersey/core/jersey-common/2.22.2/jersey-common-2.22.2.jar
+7f78d35000-7f78d36000 r--s 00000000 b3:01 1449052                        /home/nvidia/.m2/repository/org/jcuda/jnvgraph-natives/0.9.0d/jnvgraph-natives-0.9.0d-linux-aarch64.jar
+7f78d36000-7f78d3b000 r--s 00027000 b3:01 1319550                        /home/nvidia/.m2/repository/org/apache/maven/maven-model-builder/3.5.3/maven-model-builder-3.5.3.jar
+7f78d3b000-7f78d3e000 r--s 00026000 b3:01 1319586                        /home/nvidia/.m2/repository/org/apache/maven/shared/maven-shared-utils/3.2.1/maven-shared-utils-3.2.1.jar
+7f78d3e000-7f78d3f000 r--s 00003000 b3:01 1319584                        /home/nvidia/.m2/repository/org/apache/maven/maven-builder-support/3.5.3/maven-builder-support-3.5.3.jar
+7f78d3f000-7f78d41000 r--s 0000c000 b3:01 1319578                        /home/nvidia/.m2/repository/org/apache/maven/wagon/wagon-provider-api/3.0.0/wagon-provider-api-3.0.0.jar
+7f78d41000-7f78d43000 r--s 00003000 b3:01 839689                         /home/nvidia/.m2/repository/org/apache/spark/spark-tags_2.11/2.1.0/spark-tags_2.11-2.1.0.jar
+7f78d43000-7f78d47000 r--s 0003c000 b3:01 1319594                        /home/nvidia/.m2/repository/org/codehaus/plexus/plexus-utils/3.1.0/plexus-utils-3.1.0.jar
+7f78d47000-7f78d48000 r--s 00009000 b3:01 937121                         /home/nvidia/.m2/repository/org/json4s/json4s-jackson_2.11/3.2.11/json4s-jackson_2.11-3.2.11.jar
+7f78d48000-7f78d57000 r--s 0009d000 b3:01 1063260                        /home/nvidia/.m2/repository/org/specs/specs/1.2.5/specs-1.2.5.jar
+7f78d57000-7f78d7a000 rw-p 00000000 00:00 0 
+7f78d7a000-7f78e78000 r--s 00cd0000 b3:01 1319583                        /home/nvidia/.m2/repository/org/scala-lang/scala-compiler/2.10.6/scala-compiler-2.10.6.jar
+7f78e78000-7f78ea6000 r--s 00212000 b3:01 839679                         /home/nvidia/.m2/repository/org/apache/spark/spark-network-common_2.11/2.1.0/spark-network-common_2.11-2.1.0.jar
+7f78ea6000-7f78eb8000 r--s 00112000 b3:01 1063240                        /home/nvidia/.m2/repository/net/sourceforge/f2j/arpack_combined_all/0.1/arpack_combined_all-0.1.jar
+7f78eb8000-7f78ebc000 r--s 00023000 b3:01 1448952                        /home/nvidia/.m2/repository/org/jcuda/jcuda/0.9.0d/jcuda-0.9.0d.jar
+7f78ebc000-7f78ec5000 r--s 00097000 b3:01 1063256                        /home/nvidia/.m2/repository/org/jpmml/pmml-model/1.2.15/pmml-model-1.2.15.jar
+7f78ec5000-7f78f2c000 r--s 006b2000 b3:01 937235                         /home/nvidia/.m2/repository/org/scalatest/scalatest_2.11/2.2.6/scalatest_2.11-2.2.6.jar
+7f78f2c000-7f78f57000 r--s 00271000 b3:01 937022                         /home/nvidia/.m2/repository/org/apache/hadoop/hadoop-common/2.2.0/hadoop-common-2.2.0.jar
+7f78f57000-7f78f59000 r--s 0001f000 b3:01 839691                         /home/nvidia/.m2/repository/org/apache/commons/commons-crypto/1.0.0/commons-crypto-1.0.0.jar
+7f78f59000-7f78f5f000 r--s 00057000 b3:01 937083                         /home/nvidia/.m2/repository/net/java/dev/jets3t/jets3t/0.7.1/jets3t-0.7.1.jar
+7f78f5f000-7f78f77000 r--s 000d6000 b3:01 937148                         /home/nvidia/.m2/repository/org/glassfish/jersey/bundles/repackaged/jersey-guava/2.22.2/jersey-guava-2.22.2.jar
+7f78f77000-7f78fcc000 r--s 0069c000 b3:01 1063250                        /home/nvidia/.m2/repository/org/spire-math/spire_2.11/0.7.4/spire_2.11-0.7.4.jar
+7f78fcc000-7f78fcd000 r--s 00000000 b3:01 937014                         /home/nvidia/.m2/repository/org/apache/hadoop/hadoop-client/2.2.0/hadoop-client-2.2.0.jar
+7f78fcd000-7f78fcf000 r--s 00009000 b3:01 839685                         /home/nvidia/.m2/repository/org/apache/spark/spark-unsafe_2.11/2.1.0/spark-unsafe_2.11-2.1.0.jar
+7f78fcf000-7f78fd7000 r--s 0007b000 b3:01 937042                         /home/nvidia/.m2/repository/com/google/protobuf/protobuf-java/2.5.0/protobuf-java-2.5.0.jar
+7f78fd7000-7f78feb000 r--s 000ec000 b3:01 937205                         /home/nvidia/.m2/repository/org/apache/parquet/parquet-jackson/1.8.1/parquet-jackson-1.8.1.jar
+7f78feb000-7f78ff2000 r--s 00049000 b3:01 937194                         /home/nvidia/.m2/repository/com/univocity/univocity-parsers/2.2.1/univocity-parsers-2.2.1.jar
+7f78ff2000-7f78ff4000 r--s 00001000 b3:01 1190023                        /usr/lib/jvm/java-8-openjdk-arm64/jre/lib/ext/dnsns.jar
+7f78ff4000-7f7900f000 r--s 001d6000 b3:01 1190025                        /usr/lib/jvm/java-8-openjdk-arm64/jre/lib/ext/nashorn.jar
+7f7900f000-7f79019000 r--s 00116000 b3:01 1190027                        /usr/lib/jvm/java-8-openjdk-arm64/jre/lib/ext/localedata.jar
+7f79019000-7f7901a000 ---p 00000000 00:00 0 
+7f7901a000-7f79219000 rw-p 00000000 00:00 0 
+7f79219000-7f7921c000 ---p 00000000 00:00 0 
+7f7921c000-7f79419000 rw-p 00000000 00:00 0 
+7f79419000-7f7941c000 ---p 00000000 00:00 0 
+7f7941c000-7f79619000 rw-p 00000000 00:00 0 
+7f79619000-7f7961c000 ---p 00000000 00:00 0 
+7f7961c000-7f79819000 rw-p 00000000 00:00 0 
+7f79819000-7f7981c000 ---p 00000000 00:00 0 
+7f7981c000-7f79a19000 rw-p 00000000 00:00 0 
+7f79a19000-7f79a1c000 ---p 00000000 00:00 0 
+7f79a1c000-7f79c19000 rw-p 00000000 00:00 0 
+7f79c19000-7f79ef1000 r--p 00000000 b3:01 393660                         /usr/lib/locale/locale-archive
+7f79ef1000-7f79ef4000 ---p 00000000 00:00 0 
+7f79ef4000-7f7a0f1000 rw-p 00000000 00:00 0 
+7f7a0f1000-7f7a0f4000 ---p 00000000 00:00 0 
+7f7a0f4000-7f7a2f1000 rw-p 00000000 00:00 0 
+7f7a2f1000-7f7a2f2000 ---p 00000000 00:00 0 
+7f7a2f2000-7f80000000 rw-p 00000000 00:00 0 
+7f80000000-7f80021000 rw-p 00000000 00:00 0 
+7f80021000-7f84000000 ---p 00000000 00:00 0 
+7f84000000-7f84021000 rw-p 00000000 00:00 0 
+7f84021000-7f88000000 ---p 00000000 00:00 0 
+7f88000000-7f88021000 rw-p 00000000 00:00 0 
+7f88021000-7f8c000000 ---p 00000000 00:00 0 
+7f8c000000-7f8c021000 rw-p 00000000 00:00 0 
+7f8c021000-7f90000000 ---p 00000000 00:00 0 
+7f90000000-7f90bf0000 rwxp 00000000 00:00 0 
+7f90bf0000-7fb0000000 ---p 00000000 00:00 0 
+7fb0000000-7fb2074000 rw-p 00000000 00:00 0 
+7fb2074000-7fb4000000 ---p 00000000 00:00 0 
+7fb4000000-7fb4003000 r--s 00038000 b3:01 1190029                        /usr/lib/jvm/java-8-openjdk-arm64/jre/lib/ext/sunpkcs11.jar
+7fb4003000-7fb4009000 r--s 0003b000 b3:01 1190031                        /usr/lib/jvm/java-8-openjdk-arm64/jre/lib/ext/sunjce_provider.jar
+7fb4009000-7fb4024000 r--s 00394000 b3:01 1190028                        /usr/lib/jvm/java-8-openjdk-arm64/jre/lib/ext/cldrdata.jar
+7fb4024000-7fb4117000 rw-p 00000000 00:00 0 
+7fb4117000-7fb42e6000 r--s 03c2f000 b3:01 1190096                        /usr/lib/jvm/java-8-openjdk-arm64/jre/lib/rt.jar
+7fb42e6000-7fb4407000 rw-p 00000000 00:00 0 
+7fb4407000-7fb4408000 ---p 00000000 00:00 0 
+7fb4408000-7fb4607000 rw-p 00000000 00:00 0 
+7fb4607000-7fb4608000 ---p 00000000 00:00 0 
+7fb4608000-7fb4807000 rw-p 00000000 00:00 0 
+7fb4807000-7fb4808000 ---p 00000000 00:00 0 
+7fb4808000-7fb4a07000 rw-p 00000000 00:00 0 
+7fb4a07000-7fb4a08000 ---p 00000000 00:00 0 
+7fb4a08000-7fb4d66000 rw-p 00000000 00:00 0 
+7fb4d66000-7fb4eb2000 ---p 00000000 00:00 0 
+7fb4eb2000-7fb5011000 rw-p 00000000 00:00 0 
+7fb5011000-7fb515c000 ---p 00000000 00:00 0 
+7fb515c000-7fb527a000 rw-p 00000000 00:00 0 
+7fb527a000-7fb52b2000 ---p 00000000 00:00 0 
+7fb52b2000-7fb52e3000 rw-p 00000000 00:00 0 
+7fb52e3000-7fb5ab3000 ---p 00000000 00:00 0 
+7fb5ab3000-7fb5abc000 r-xp 00000000 b3:01 1721393                        /lib/aarch64-linux-gnu/libnss_files-2.23.so
+7fb5abc000-7fb5acb000 ---p 00009000 b3:01 1721393                        /lib/aarch64-linux-gnu/libnss_files-2.23.so
+7fb5acb000-7fb5acc000 r--p 00008000 b3:01 1721393                        /lib/aarch64-linux-gnu/libnss_files-2.23.so
+7fb5acc000-7fb5acd000 rw-p 00009000 b3:01 1721393                        /lib/aarch64-linux-gnu/libnss_files-2.23.so
+7fb5acd000-7fb5ad3000 rw-p 00000000 00:00 0 
+7fb5ad3000-7fb5adc000 r-xp 00000000 b3:01 1721402                        /lib/aarch64-linux-gnu/libnss_nis-2.23.so
+7fb5adc000-7fb5aeb000 ---p 00009000 b3:01 1721402                        /lib/aarch64-linux-gnu/libnss_nis-2.23.so
+7fb5aeb000-7fb5aec000 r--p 00008000 b3:01 1721402                        /lib/aarch64-linux-gnu/libnss_nis-2.23.so
+7fb5aec000-7fb5aed000 rw-p 00009000 b3:01 1721402                        /lib/aarch64-linux-gnu/libnss_nis-2.23.so
+7fb5aed000-7fb5aff000 r-xp 00000000 b3:01 1721410                        /lib/aarch64-linux-gnu/libnsl-2.23.so
+7fb5aff000-7fb5b0e000 ---p 00012000 b3:01 1721410                        /lib/aarch64-linux-gnu/libnsl-2.23.so
+7fb5b0e000-7fb5b0f000 r--p 00011000 b3:01 1721410                        /lib/aarch64-linux-gnu/libnsl-2.23.so
+7fb5b0f000-7fb5b10000 rw-p 00012000 b3:01 1721410                        /lib/aarch64-linux-gnu/libnsl-2.23.so
+7fb5b10000-7fb5b12000 rw-p 00000000 00:00 0 
+7fb5b12000-7fb5b18000 r-xp 00000000 b3:01 1721406                        /lib/aarch64-linux-gnu/libnss_compat-2.23.so
+7fb5b18000-7fb5b28000 ---p 00006000 b3:01 1721406                        /lib/aarch64-linux-gnu/libnss_compat-2.23.so
+7fb5b28000-7fb5b29000 r--p 00006000 b3:01 1721406                        /lib/aarch64-linux-gnu/libnss_compat-2.23.so
+7fb5b29000-7fb5b2a000 rw-p 00007000 b3:01 1721406                        /lib/aarch64-linux-gnu/libnss_compat-2.23.so
+7fb5b2a000-7fb5b50000 r-xp 00000000 b3:01 1190084                        /usr/lib/jvm/java-8-openjdk-arm64/jre/lib/aarch64/libjava.so
+7fb5b50000-7fb5b5f000 ---p 00026000 b3:01 1190084                        /usr/lib/jvm/java-8-openjdk-arm64/jre/lib/aarch64/libjava.so
+7fb5b5f000-7fb5b60000 r--p 00025000 b3:01 1190084                        /usr/lib/jvm/java-8-openjdk-arm64/jre/lib/aarch64/libjava.so
+7fb5b60000-7fb5b62000 rw-p 00026000 b3:01 1190084                        /usr/lib/jvm/java-8-openjdk-arm64/jre/lib/aarch64/libjava.so
+7fb5b62000-7fb5b71000 r-xp 00000000 b3:01 1190075                        /usr/lib/jvm/java-8-openjdk-arm64/jre/lib/aarch64/libverify.so
+7fb5b71000-7fb5b80000 ---p 0000f000 b3:01 1190075                        /usr/lib/jvm/java-8-openjdk-arm64/jre/lib/aarch64/libverify.so
+7fb5b80000-7fb5b82000 r--p 0000e000 b3:01 1190075                        /usr/lib/jvm/java-8-openjdk-arm64/jre/lib/aarch64/libverify.so
+7fb5b82000-7fb5b83000 rw-p 00010000 b3:01 1190075                        /usr/lib/jvm/java-8-openjdk-arm64/jre/lib/aarch64/libverify.so
+7fb5b83000-7fb5b89000 r-xp 00000000 b3:01 1721412                        /lib/aarch64-linux-gnu/librt-2.23.so
+7fb5b89000-7fb5b98000 ---p 00006000 b3:01 1721412                        /lib/aarch64-linux-gnu/librt-2.23.so
+7fb5b98000-7fb5b99000 r--p 00005000 b3:01 1721412                        /lib/aarch64-linux-gnu/librt-2.23.so
+7fb5b99000-7fb5b9a000 rw-p 00006000 b3:01 1721412                        /lib/aarch64-linux-gnu/librt-2.23.so
+7fb5b9a000-7fb5b9d000 ---p 00000000 00:00 0 
+7fb5b9d000-7fb5d9a000 rw-p 00000000 00:00 0 
+7fb5d9a000-7fb5dab000 r-xp 00000000 b3:01 1705301                        /lib/aarch64-linux-gnu/libgcc_s.so.1
+7fb5dab000-7fb5dba000 ---p 00011000 b3:01 1705301                        /lib/aarch64-linux-gnu/libgcc_s.so.1
+7fb5dba000-7fb5dbb000 rw-p 00010000 b3:01 1705301                        /lib/aarch64-linux-gnu/libgcc_s.so.1
+7fb5dbb000-7fb5e57000 r-xp 00000000 b3:01 1721396                        /lib/aarch64-linux-gnu/libm-2.23.so
+7fb5e57000-7fb5e66000 ---p 0009c000 b3:01 1721396                        /lib/aarch64-linux-gnu/libm-2.23.so
+7fb5e66000-7fb5e67000 r--p 0009b000 b3:01 1721396                        /lib/aarch64-linux-gnu/libm-2.23.so
+7fb5e67000-7fb5e68000 rw-p 0009c000 b3:01 1721396                        /lib/aarch64-linux-gnu/libm-2.23.so
+7fb5e68000-7fb5fd8000 r-xp 00000000 b3:01 1182263                        /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.21
+7fb5fd8000-7fb5fe7000 ---p 00170000 b3:01 1182263                        /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.21
+7fb5fe7000-7fb5ff1000 r--p 0016f000 b3:01 1182263                        /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.21
+7fb5ff1000-7fb5ff3000 rw-p 00179000 b3:01 1182263                        /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.21
+7fb5ff3000-7fb5ff7000 rw-p 00000000 00:00 0 
+7fb5ff7000-7fb6a21000 r-xp 00000000 b3:01 1190090                        /usr/lib/jvm/java-8-openjdk-arm64/jre/lib/aarch64/server/libjvm.so
+7fb6a21000-7fb6a30000 ---p 00a2a000 b3:01 1190090                        /usr/lib/jvm/java-8-openjdk-arm64/jre/lib/aarch64/server/libjvm.so
+7fb6a30000-7fb6ab1000 r--p 00a29000 b3:01 1190090                        /usr/lib/jvm/java-8-openjdk-arm64/jre/lib/aarch64/server/libjvm.so
+7fb6ab1000-7fb6ada000 rw-p 00aaa000 b3:01 1190090                        /usr/lib/jvm/java-8-openjdk-arm64/jre/lib/aarch64/server/libjvm.so
+7fb6ada000-7fb6b3b000 rw-p 00000000 00:00 0 
+7fb6b3b000-7fb6b52000 r-xp 00000000 b3:01 1721404                        /lib/aarch64-linux-gnu/libpthread-2.23.so
+7fb6b52000-7fb6b61000 ---p 00017000 b3:01 1721404                        /lib/aarch64-linux-gnu/libpthread-2.23.so
+7fb6b61000-7fb6b62000 r--p 00016000 b3:01 1721404                        /lib/aarch64-linux-gnu/libpthread-2.23.so
+7fb6b62000-7fb6b63000 rw-p 00017000 b3:01 1721404                        /lib/aarch64-linux-gnu/libpthread-2.23.so
+7fb6b63000-7fb6b67000 rw-p 00000000 00:00 0 
+7fb6b67000-7fb6b69000 r-xp 00000000 b3:01 1721411                        /lib/aarch64-linux-gnu/libdl-2.23.so
+7fb6b69000-7fb6b78000 ---p 00002000 b3:01 1721411                        /lib/aarch64-linux-gnu/libdl-2.23.so
+7fb6b78000-7fb6b79000 r--p 00001000 b3:01 1721411                        /lib/aarch64-linux-gnu/libdl-2.23.so
+7fb6b79000-7fb6b7a000 rw-p 00002000 b3:01 1721411                        /lib/aarch64-linux-gnu/libdl-2.23.so
+7fb6b7a000-7fb6b90000 r-xp 00000000 b3:01 1705320                        /lib/aarch64-linux-gnu/libz.so.1.2.8
+7fb6b90000-7fb6b9f000 ---p 00016000 b3:01 1705320                        /lib/aarch64-linux-gnu/libz.so.1.2.8
+7fb6b9f000-7fb6ba0000 r--p 00015000 b3:01 1705320                        /lib/aarch64-linux-gnu/libz.so.1.2.8
+7fb6ba0000-7fb6ba1000 rw-p 00016000 b3:01 1705320                        /lib/aarch64-linux-gnu/libz.so.1.2.8
+7fb6ba1000-7fb6ccf000 r-xp 00000000 b3:01 1721409                        /lib/aarch64-linux-gnu/libc-2.23.so
+7fb6ccf000-7fb6cde000 ---p 0012e000 b3:01 1721409                        /lib/aarch64-linux-gnu/libc-2.23.so
+7fb6cde000-7fb6ce2000 r--p 0012d000 b3:01 1721409                        /lib/aarch64-linux-gnu/libc-2.23.so
+7fb6ce2000-7fb6ce4000 rw-p 00131000 b3:01 1721409                        /lib/aarch64-linux-gnu/libc-2.23.so
+7fb6ce4000-7fb6ce8000 rw-p 00000000 00:00 0 
+7fb6ce8000-7fb6ce9000 r--s 00000000 b3:01 1448965                        /home/nvidia/.m2/repository/org/jcuda/jcublas-natives/0.9.0d/jcublas-natives-0.9.0d-linux-aarch64.jar
+7fb6ce9000-7fb6cea000 r--s 0000a000 b3:01 1190032                        /usr/lib/jvm/java-8-openjdk-arm64/jre/lib/ext/jaccess.jar
+7fb6cea000-7fb6ced000 r--s 0000f000 b3:01 1190026                        /usr/lib/jvm/java-8-openjdk-arm64/jre/lib/ext/icedtea-sound.jar
+7fb6ced000-7fb6cef000 r--s 00008000 b3:01 1190030                        /usr/lib/jvm/java-8-openjdk-arm64/jre/lib/ext/sunec.jar
+7fb6cef000-7fb6cf6000 r-xp 00000000 b3:01 1190065                        /usr/lib/jvm/java-8-openjdk-arm64/jre/lib/aarch64/libzip.so
+7fb6cf6000-7fb6d05000 ---p 00007000 b3:01 1190065                        /usr/lib/jvm/java-8-openjdk-arm64/jre/lib/aarch64/libzip.so
+7fb6d05000-7fb6d06000 r--p 00006000 b3:01 1190065                        /usr/lib/jvm/java-8-openjdk-arm64/jre/lib/aarch64/libzip.so
+7fb6d06000-7fb6d07000 rw-p 00007000 b3:01 1190065                        /usr/lib/jvm/java-8-openjdk-arm64/jre/lib/aarch64/libzip.so
+7fb6d07000-7fb6d14000 r-xp 00000000 b3:01 1190092                        /usr/lib/jvm/java-8-openjdk-arm64/jre/lib/aarch64/jli/libjli.so
+7fb6d14000-7fb6d23000 ---p 0000d000 b3:01 1190092                        /usr/lib/jvm/java-8-openjdk-arm64/jre/lib/aarch64/jli/libjli.so
+7fb6d23000-7fb6d24000 r--p 0000c000 b3:01 1190092                        /usr/lib/jvm/java-8-openjdk-arm64/jre/lib/aarch64/jli/libjli.so
+7fb6d24000-7fb6d25000 rw-p 0000d000 b3:01 1190092                        /usr/lib/jvm/java-8-openjdk-arm64/jre/lib/aarch64/jli/libjli.so
+7fb6d25000-7fb6d41000 r-xp 00000000 b3:01 1721408                        /lib/aarch64-linux-gnu/ld-2.23.so
+7fb6d41000-7fb6d42000 r--s 00010000 b3:01 1190024                        /usr/lib/jvm/java-8-openjdk-arm64/jre/lib/ext/zipfs.jar
+7fb6d42000-7fb6d4a000 rw-s 00000000 b3:01 394875                         /tmp/hsperfdata_nvidia/30564
+7fb6d4a000-7fb6d4b000 r--p 00000000 00:00 0 
+7fb6d4b000-7fb6d4f000 rw-p 00000000 00:00 0 
+7fb6d4f000-7fb6d50000 r--p 00000000 00:00 0                              [vvar]
+7fb6d50000-7fb6d51000 r-xp 00000000 00:00 0                              [vdso]
+7fb6d51000-7fb6d52000 r--p 0001c000 b3:01 1721408                        /lib/aarch64-linux-gnu/ld-2.23.so
+7fb6d52000-7fb6d54000 rw-p 0001d000 b3:01 1721408                        /lib/aarch64-linux-gnu/ld-2.23.so
+7ffa5cf000-7ffa5f5000 rw-p 00000000 00:00 0                              [stack]
+
+VM Arguments:
+jvm_args: -Xms1024m -Xmx2048m -XX:PermSize=64m -XX:MaxPermSize=1024m -XX:ReservedCodeCacheSize=512m 
+java_command: scala_maven_executions.MainWithArgsInFile com.ibm.gpuenabler.GpuKMeans /tmp/scala-maven-2536819281329678586.args
+java_class_path (initial): /home/nvidia/ysnam/gpuenabler/GPUEnabler/examples/target/test-classes:/home/nvidia/ysnam/gpuenabler/GPUEnabler/examples/target/classes:/home/nvidia/.m2/repository/org/jcuda/jcublas-natives/0.9.0d/jcublas-natives-0.9.0d-linux-aarch64.jar:/home/nvidia/.m2/repository/com/univocity/univocity-parsers/2.2.1/univocity-parsers-2.2.1.jar:/home/nvidia/.m2/repository/org/apache/parquet/parquet-jackson/1.8.1/parquet-jackson-1.8.1.jar:/home/nvidia/.m2/repository/com/google/protobuf/protobuf-java/2.5.0/protobuf-java-2.5.0.jar:/home/nvidia/.m2/repository/org/apache/spark/spark-unsafe_2.11/2.1.0/spark-unsafe_2.11-2.1.0.jar:/home/nvidia/.m2/repository/org/apache/hadoop/hadoop-client/2.2.0/hadoop-client-2.2.0.jar:/home/nvidia/.m2/repository/org/spire-math/spire_2.11/0.7.4/spire_2.11-0.7.4.jar:/home/nvidia/.m2/repository/org/glassfish/jersey/bundles/repackaged/jersey-guava/2.22.2/jersey-guava-2.22.2.jar:/home/nvidia/.m2/repository/net/java/dev/jets3t/jets3t/0.7.1/jets3t-0.7.1.jar:/home/nvidia/.m2/repository/org/apache/commons/commons-crypto/1.0.0/commons-crypto-1.0.0.jar:/home/nvidia/.m2/repository/org/apache/hadoop/hadoop-common/2.2.0/hadoop-common-2.2.0.jar:/home/nvidia/.m2/repository/org/scalatest/scalatest_2.11/2.2.6/scalatest_2.11-2.2.6.jar:/home/nvidia/.m2/repository/org/jpmml/pmml-model/1.2.15/pmml-model-1.2.15.jar:/home/nvidia/.m2/repository/org/jcuda/jcuda/0.9.0d/jcuda-0.9.0d.jar:/home/nvidia/.m2/repository/net/sourceforge/f2j/arpack_combined_all/0.1/arpack_combined_all-0.1.jar:/home/nvidia/.m2/repository/org/apache/spark/spark-network-common_2.11/2.1.0/spark-network-common_2.11-2.1.0.jar:/home/nvidia/.m2/repository/org/scala-lang/scala-compiler/2.10.6/scala-compiler-2.10.6.jar:/home/nvidia/.m2/repository/org/specs/specs/1.2.5/specs-1.2.5.jar:/home/nvidia/.m2/repository/org/json4s/json4s-jackson_2.11/3.2.11/json4s-jackson_2.11-3.2.11.jar:/home/nvidia/.m2/repository/org/codehaus/plexus/plexus-utils/3.1.0/plexus-utils-3.1.0.jar:/home/nvidia/.m2/repo
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-arm64
+PATH=/opt/apache-maven-3.5.4/bin/:/opt/apache-maven-3.5.4/bin:/usr/local/cuda-9.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin
+LD_LIBRARY_PATH=/usr/local/cuda-9.0/lib64:
+SHELL=/bin/bash
+DISPLAY=localhost:10.0
+
+Signal Handlers:
+SIGSEGV: [libjvm.so+0x996cc8], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGBUS: [libjvm.so+0x996cc8], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGFPE: [libjvm.so+0x7e7548], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGPIPE: [libjvm.so+0x7e7548], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGXFSZ: [libjvm.so+0x7e7548], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGILL: [libjvm.so+0x7e7548], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGUSR1: SIG_DFL, sa_mask[0]=00000000000000000000000000000000, sa_flags=none
+SIGUSR2: [libjvm.so+0x7e7408], sa_mask[0]=00100000000000000000000000000000, sa_flags=SA_RESTART|SA_SIGINFO
+SIGHUP: [libjvm.so+0x7e7820], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGINT: [libjvm.so+0x7e7820], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGTERM: [libjvm.so+0x7e7820], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGQUIT: [libjvm.so+0x7e7820], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+
+
+---------------  S Y S T E M  ---------------
+
+OS:DISTRIB_ID=Ubuntu
+DISTRIB_RELEASE=16.04
+DISTRIB_CODENAME=xenial
+DISTRIB_DESCRIPTION="Ubuntu 16.04 LTS"
+
+uname:Linux 4.4.38-tegra #1 SMP PREEMPT Thu May 17 00:15:19 PDT 2018 aarch64
+libc:glibc 2.23 NPTL 2.23 
+rlimit: STACK 8192k, CORE 0k, NPROC 31124, NOFILE 1048576, AS infinity
+load average:2.80 1.97 1.66
+
+/proc/meminfo:
+MemTotal:        8034572 kB
+MemFree:         1398024 kB
+MemAvailable:    5208536 kB
+Buffers:          242296 kB
+Cached:          3317888 kB
+SwapCached:            0 kB
+Active:          3519144 kB
+Inactive:        1713020 kB
+Active(anon):    1673900 kB
+Inactive(anon):    31040 kB
+Active(file):    1845244 kB
+Inactive(file):  1681980 kB
+Unevictable:          32 kB
+Mlocked:              32 kB
+SwapTotal:             0 kB
+SwapFree:              0 kB
+Dirty:               356 kB
+Writeback:             0 kB
+AnonPages:       1672312 kB
+Mapped:           191620 kB
+Shmem:             32960 kB
+Slab:             388476 kB
+SReclaimable:     325768 kB
+SUnreclaim:        62708 kB
+KernelStack:       10960 kB
+PageTables:        16864 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:     4017284 kB
+Committed_AS:    6822760 kB
+VmallocTotal:   258998208 kB
+VmallocUsed:           0 kB
+VmallocChunk:          0 kB
+NvMapMemFree:     243772 kB
+NvMapMemUsed:     585040 kB
+CmaTotal:          65536 kB
+CmaFree:            5668 kB
+
+
+CPU:total 6 (initial active 4) simd, crc, aes, sha1, sha256
+
+/proc/cpuinfo:
+processor	: 0
+model name	: ARMv8 Processor rev 3 (v8l)
+BogoMIPS	: 62.50
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x1
+CPU part	: 0xd07
+CPU revision	: 3
+
+processor	: 3
+model name	: ARMv8 Processor rev 3 (v8l)
+BogoMIPS	: 62.50
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x1
+CPU part	: 0xd07
+CPU revision	: 3
+
+processor	: 4
+model name	: ARMv8 Processor rev 3 (v8l)
+BogoMIPS	: 62.50
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x1
+CPU part	: 0xd07
+CPU revision	: 3
+
+processor	: 5
+model name	: ARMv8 Processor rev 3 (v8l)
+BogoMIPS	: 62.50
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x1
+CPU part	: 0xd07
+CPU revision	: 3
+
+
+
+Memory: 4k page, physical 8034572k(1398024k free), swap 0k(0k free)
+
+vm_info: OpenJDK 64-Bit Server VM (25.171-b11) for linux-aarch64 JRE (1.8.0_171-8u171-b11-0ubuntu0.16.04.1-b11), built on Apr 27 2018 17:28:41 by "buildd" with gcc 5.4.0 20160609
+
+time: Wed Jul 25 04:46:52 2018
+elapsed time: 9 seconds (0d 0h 0m 9s)
+
