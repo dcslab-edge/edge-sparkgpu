@@ -1,4 +1,4 @@
-# Install script for directory: /home/nvidia/project/edge-sched/jcuda/jcuda-main
+# Install script for directory: /home/nvidia/ysnam/jcuda/jcuda-main
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,16 +34,16 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/nvidia/project/edge-sched/jcuda/jcuda/JCudaDriverJNI/bin/cmake_install.cmake")
-  include("/home/nvidia/project/edge-sched/jcuda/jcuda/JCudaRuntimeJNI/bin/cmake_install.cmake")
-  include("/home/nvidia/project/edge-sched/jcuda/jcuda/JNvrtcJNI/bin/cmake_install.cmake")
-  include("/home/nvidia/project/edge-sched/jcuda/jcublas/JCublasJNI/bin/cmake_install.cmake")
-  include("/home/nvidia/project/edge-sched/jcuda/jcublas/JCublas2JNI/bin/cmake_install.cmake")
-  include("/home/nvidia/project/edge-sched/jcuda/jcufft/JCufftJNI/bin/cmake_install.cmake")
-  include("/home/nvidia/project/edge-sched/jcuda/jcurand/JCurandJNI/bin/cmake_install.cmake")
-  include("/home/nvidia/project/edge-sched/jcuda/jcusparse/JCusparseJNI/bin/cmake_install.cmake")
-  include("/home/nvidia/project/edge-sched/jcuda/jcusolver/JCusolverJNI/bin/cmake_install.cmake")
-  include("/home/nvidia/project/edge-sched/jcuda/jnvgraph/JNvgraphJNI/bin/cmake_install.cmake")
+  include("/home/nvidia/ysnam/jcuda/jcuda/JCudaDriverJNI/bin/cmake_install.cmake")
+  include("/home/nvidia/ysnam/jcuda/jcuda/JCudaRuntimeJNI/bin/cmake_install.cmake")
+  include("/home/nvidia/ysnam/jcuda/jcuda/JNvrtcJNI/bin/cmake_install.cmake")
+  include("/home/nvidia/ysnam/jcuda/jcublas/JCublasJNI/bin/cmake_install.cmake")
+  include("/home/nvidia/ysnam/jcuda/jcublas/JCublas2JNI/bin/cmake_install.cmake")
+  include("/home/nvidia/ysnam/jcuda/jcufft/JCufftJNI/bin/cmake_install.cmake")
+  include("/home/nvidia/ysnam/jcuda/jcurand/JCurandJNI/bin/cmake_install.cmake")
+  include("/home/nvidia/ysnam/jcuda/jcusparse/JCusparseJNI/bin/cmake_install.cmake")
+  include("/home/nvidia/ysnam/jcuda/jcusolver/JCusolverJNI/bin/cmake_install.cmake")
+  include("/home/nvidia/ysnam/jcuda/jnvgraph/JNvgraphJNI/bin/cmake_install.cmake")
 
 endif()
 
@@ -55,5 +55,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/nvidia/project/edge-sched/jcuda/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/nvidia/ysnam/jcuda/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
