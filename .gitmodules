@@ -1,0 +1,33 @@
+[submodule "jcuda/jcuda-main"]
+	path = jcuda/jcuda-main
+	url = https://github.com/jcuda/jcuda-main.git
+[submodule "jcuda/jcuda-parent"]
+	path = jcuda/jcuda-parent
+	url = https://github.com/jcuda/jcuda-parent.git
+[submodule "jcuda/jcuda-common"]
+	path = jcuda/jcuda-common
+	url = https://github.com/jcuda/jcuda-common.git
+[submodule "jcuda/jcuda"]
+	path = jcuda/jcuda
+	url = https://github.com/jcuda/jcuda.git
+[submodule "jcuda/jcublas"]
+	path = jcuda/jcublas
+	url = https://github.com/jcuda/jcublas.git
+[submodule "jcuda/jcufft"]
+	path = jcuda/jcufft
+	url = https://github.com/jcuda/jcufft.git
+[submodule "jcuda/jcusparse"]
+	path = jcuda/jcusparse
+	url = https://github.com/jcuda/jcusparse.git
+[submodule "jcuda/jcurand"]
+	path = jcuda/jcurand
+	url = https://github.com/jcuda/jcurand.git
+[submodule "jcuda/jcusolver"]
+	path = jcuda/jcusolver
+	url = https://github.com/jcuda/jcusolver.git
+[submodule "jcuda/jnvgraph"]
+	path = jcuda/jnvgraph
+	url = https://github.com/jcuda/jnvgraph.git
+[submodule "jcuda/jcudnn"]
+	path = jcuda/jcudnn
+	url = https://github.com/jcuda/jcudnn.git
